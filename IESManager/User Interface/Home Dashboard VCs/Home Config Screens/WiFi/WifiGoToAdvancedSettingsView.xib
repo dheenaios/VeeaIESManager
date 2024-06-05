@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-M.ttf">
+            <string>Ubuntu-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WifiGoToAdvancedSettingsView" customModule="IESManager" customModuleProvider="target">
+            <connections>
+                <outlet property="advancedSettingsButton" destination="fCk-mr-CcB" id="iWj-PK-Zti"/>
+                <outlet property="bodyLabel" destination="Icp-8a-SKr" id="brC-HY-FxY"/>
+                <outlet property="restoreButton" destination="aeT-de-sOl" id="zcN-A5-rbV"/>
+                <outlet property="titleLabel" destination="txR-RB-YRb" id="RS6-xr-dnF"/>
+                <outlet property="xibView" destination="iN0-l3-epB" id="pth-pR-a7d"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gwH-Ek-pdF">
+                    <rect key="frame" x="20" y="246.5" width="335" height="174.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Visit Advanced Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="txR-RB-YRb">
+                            <rect key="frame" x="8" y="0.0" width="327" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Icp-8a-SKr">
+                            <rect key="frame" x="0.0" y="29" width="335" height="72"/>
+                            <string key="text">Wi-Fi settings of this mesh has been changed through Advanced Settings page and can not be changed from this page any longer unless default settings are restored.</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fCk-mr-CcB" customClass="CurvedButton" customModule="IESManager" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="121" width="335" height="45"/>
+                            <color key="backgroundColor" red="0.27481016520000001" green="0.49008131030000002" blue="0.8571171165" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="OTJ-S9-0Tv"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu" pointSize="18"/>
+                            <color key="tintColor" systemColor="systemBackgroundColor"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Go to Advanced Settings"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="text" value="Continue"/>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="goToAdvancedSettingsTapped:" destination="-1" eventType="touchUpInside" id="Xd9-h3-zAR"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="txR-RB-YRb" secondAttribute="trailing" id="47M-qI-tI2"/>
+                        <constraint firstAttribute="trailing" secondItem="Icp-8a-SKr" secondAttribute="trailing" id="5qB-61-5nt"/>
+                        <constraint firstAttribute="bottom" secondItem="fCk-mr-CcB" secondAttribute="bottom" constant="8.5" id="86z-ci-kDd"/>
+                        <constraint firstItem="txR-RB-YRb" firstAttribute="leading" secondItem="gwH-Ek-pdF" secondAttribute="leading" constant="8" id="OKL-WY-o4D"/>
+                        <constraint firstAttribute="trailing" secondItem="fCk-mr-CcB" secondAttribute="trailing" id="Rmw-2S-w3Y"/>
+                        <constraint firstItem="fCk-mr-CcB" firstAttribute="top" secondItem="Icp-8a-SKr" secondAttribute="bottom" constant="20" id="aSB-xC-o2O"/>
+                        <constraint firstItem="Icp-8a-SKr" firstAttribute="top" secondItem="txR-RB-YRb" secondAttribute="bottom" constant="8" symbolic="YES" id="eCi-P5-qkK"/>
+                        <constraint firstItem="Icp-8a-SKr" firstAttribute="leading" secondItem="gwH-Ek-pdF" secondAttribute="leading" id="evg-tu-ncv"/>
+                        <constraint firstItem="fCk-mr-CcB" firstAttribute="leading" secondItem="gwH-Ek-pdF" secondAttribute="leading" id="ov5-W0-LjG"/>
+                        <constraint firstItem="txR-RB-YRb" firstAttribute="top" secondItem="gwH-Ek-pdF" secondAttribute="top" id="rsy-W1-28A"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aeT-de-sOl">
+                    <rect key="frame" x="20" y="611" width="335" height="30"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Restore Defaults"/>
+                    <connections>
+                        <action selector="restoreDefaultsTapped:" destination="-1" eventType="touchUpInside" id="8LV-2A-VjH"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="aeT-de-sOl" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="9LN-KE-hnr"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="gwH-Ek-pdF" secondAttribute="trailing" constant="20" id="WnR-du-22X"/>
+                <constraint firstItem="gwH-Ek-pdF" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="YRN-lU-L7f"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="aeT-de-sOl" secondAttribute="bottom" constant="26" id="eZJ-pK-WD5"/>
+                <constraint firstItem="gwH-Ek-pdF" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="sNE-72-2hi"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="aeT-de-sOl" secondAttribute="trailing" constant="20" id="wRE-Pk-Smn"/>
+            </constraints>
+            <point key="canvasLocation" x="138.40000000000001" y="129.98500749625188"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

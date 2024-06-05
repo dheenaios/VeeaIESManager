@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "red_veea_logo.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

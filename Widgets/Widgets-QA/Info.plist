@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>HTTP_SCHEME</key>
+	<string>https://</string>
+	<key>NSExtension</key>
+	<dict>
+		<key>NSExtensionPointIdentifier</key>
+		<string>com.apple.widgetkit-extension</string>
+	</dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Ubuntu-B.ttf</string>
+		<string>Ubuntu-L.ttf</string>
+		<string>Ubuntu-M.ttf</string>
+		<string>Ubuntu-R.ttf</string>
+		<string>Ubuntu-Th</string>
+		<string>UbuntuMono-B.ttf</string>
+		<string>UbuntuMono-R.ttf</string>
+	</array>
+	<key>VEEA_AUTH_REALM</key>
+	<string>https://qa-auth.veea.co/auth/realms/</string>
+	<key>VEEA_MAS_API</key>
+	<string>qamas.veea.io</string>
+	<key>VEEA_UB_BASE</key>
+	<string>qa.veea.co</string>
+</dict>
+</plist>

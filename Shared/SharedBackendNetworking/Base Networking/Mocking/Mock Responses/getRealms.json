@@ -1,0 +1,8 @@
+{
+	 "tags": ["enterprise", "home"],
+	 "url": "https://qa-auth.veea.co/auth/realms/veea/veearealms/realms",
+	 "method": "GET",
+	 "httpCode": 200,
+	 "responseJsonString": 
+     "[{\"id\":\"home-kicc-korea\",\"name\":\"home-kicc-korea\"},{\"id\":\"home-veea-bath\",\"name\":\"home-veea-bath\"},{\"id\":\"home-veea-nyc\",\"name\":\"home-veea-nyc\"},{\"id\":\"kicc\",\"name\":\"kicc\"},{\"id\":\"veea\",\"name\":\"veea\"},{\"id\":\"milestone14\",\"name\":\"authz\"},{\"id\":\"home-veea-ny\",\"name\":\"home-veea-ny\"}]"
+ }

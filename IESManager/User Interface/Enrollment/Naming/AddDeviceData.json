@@ -1,0 +1,15 @@
+{
+    "device": {
+        "vcTitle": "Name VeeaHub",
+        "icon": "OnboardingStep3",
+        "title": "Name your VeeaHub",
+        "details": "A default name has been given to the VeeaHub. If you like, you can change this to something more memorable and descriptive."
+    },
+    "mesh": {
+        "vcTitle": "Name Mesh",
+        "icon": "OnboardingStep5",
+        "title": "Name your mesh",
+        "details": "Your VeeaHub operates in a \"mesh\" - a group of VeeaHubs working together. You can add more VeeaHubs to your mesh later or create a new mesh."
+    }
+    
+}

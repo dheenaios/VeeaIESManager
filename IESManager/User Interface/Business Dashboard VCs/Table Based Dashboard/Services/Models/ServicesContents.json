@@ -1,0 +1,38 @@
+[
+    {
+        "section" : "Active",
+        "isHidden" : false,
+        "contents" : [
+            {
+                "androidIconNames" : [
+                    "cell_grey",
+                    "cell_black"
+                    
+                ],
+                "iosIconName" : "cell_grey",
+                "itemID" : "sd_wan",
+                "iosSegueID" : "sd_wan_cellular_stats",
+                "title" : "4G Cellular",
+                "subTitle" : "SD-WAN Statistics",
+                "isEnabled" : true,
+                "isHidden" : false,
+                "isOptional" : true
+            },
+            {
+                "androidIconNames" : [
+                    "public_wifi_grey",
+                    "public_wifi_black"
+                ],
+                "iosIconName" : "public_wifi_grey",
+                "itemID" : "public_wifi",
+                "iosSegueID" : "public_wifi",
+                "title" : "Public Wi-Fi",
+                "isEnabled" : true,
+                "subTitle" : "Public Wi-Fi Configuration",
+                "isHidden" : false,
+                "isOptional" : true
+            }
+        ]
+    }
+]
+

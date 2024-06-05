@@ -1,0 +1,7 @@
+{
+	 "tags": ["enterprise", "home"],
+	 "url": "https://qa-auth.veea.co/auth/realms/veea/protocol/openid-connect/userinfo",
+	 "method": "GET",
+	 "httpCode": 200,
+	 "responseJsonString": "{\"sub\":\"86ee6e1f-3d43-4bee-8192-229dd640df2a\",\"email_verified\":true,\"groups\":[\"29d63ff8-9b79-497d-9bbf-a34d2a626e22\/eb2e0830-e441-49cb-ba9b-ff62ddedc865\/60ba4b65-aebc-4676-9e7a-859814b5d927\",\"29d63ff8-9b79-497d-9bbf-a34d2a626e22\/eb2e0830-e441-49cb-ba9b-ff62ddedc865\/3149279b-babd-4621-b752-57f061029032\",\"29d63ff8-9b79-497d-9bbf-a34d2a626e22\/eb2e0830-e441-49cb-ba9b-ff62ddedc865\/c0abd237-45f3-47df-bd8b-ec0d04ee94e3\",\"29d63ff8-9b79-497d-9bbf-a34d2a626e22\/eb2e0830-e441-49cb-ba9b-ff62ddedc865\/f661302a-4422-44ca-b027-99c2b7b6bf8a\",\"29d63ff8-9b79-497d-9bbf-a34d2a626e22\/eb2e0830-e441-49cb-ba9b-ff62ddedc865\/8018aa2c-fdd6-4f9c-a293-913d7bb6d719\",\"29d63ff8-9b79-497d-9bbf-a34d2a626e22\/eb2e0830-e441-49cb-ba9b-ff62ddedc865\/bfeddb56-fbd9-443b-b695-54b4d7206295\",\"29d63ff8-9b79-497d-9bbf-a34d2a626e22\/eb2e0830-e441-49cb-ba9b-ff62ddedc865\/cdaf1bd3-bd00-46f6-b599-a81b45ea5777\"],\"preferred_username\":\"stropdale\",\"given_name\":\"Richard\",\"individual_id\":\"89EEE2327CEA4290AEC3B0B924F43ECB\",\"country_code\":\"United Kingdom\",\"user_id\":1690,\"name\":\"Richard Stockdale\",\"phone_number\":\"+447793359319\",\"allow_receive_sms\":true,\"family_name\":\"Stockdale\",\"email\":\"richard.stockdale@veeasystems.com\"}"
+ }

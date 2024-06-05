@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-R.ttf">
+            <string>Ubuntu</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BoolView" customModule="IESManager" customModuleProvider="target">
+            <connections>
+                <outlet property="boolSwitch" destination="7Jl-Mo-Mhw" id="7GY-JC-hhf"/>
+                <outlet property="subTitleLabel" destination="9ub-yB-Uar" id="krG-ID-iSa"/>
+                <outlet property="titleLabel" destination="omw-JF-UYf" id="foZ-LR-bUl"/>
+                <outlet property="xibView" destination="iN0-l3-epB" id="zqG-mo-Hcf"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RADIUS Swap Octets" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="omw-JF-UYf">
+                    <rect key="frame" x="12" y="14" width="294" height="19.5"/>
+                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Jl-Mo-Mhw">
+                    <rect key="frame" x="314" y="8" width="51" height="31"/>
+                    <color key="onTintColor" red="0.34901960780000002" green="0.33725490200000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                </switch>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ub-yB-Uar">
+                    <rect key="frame" x="12" y="43" width="343" height="16"/>
+                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="14"/>
+                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="7Jl-Mo-Mhw" firstAttribute="leading" secondItem="omw-JF-UYf" secondAttribute="trailing" constant="8" id="78q-SR-knF"/>
+                <constraint firstItem="9ub-yB-Uar" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="12" id="NnG-hj-bED"/>
+                <constraint firstItem="omw-JF-UYf" firstAttribute="centerY" secondItem="7Jl-Mo-Mhw" secondAttribute="centerY" id="YWu-32-1bo"/>
+                <constraint firstItem="9ub-yB-Uar" firstAttribute="top" secondItem="7Jl-Mo-Mhw" secondAttribute="bottom" constant="4" id="aLK-HM-NPd"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="9ub-yB-Uar" secondAttribute="trailing" constant="20" id="bz5-6Z-v0q"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="7Jl-Mo-Mhw" secondAttribute="trailing" constant="12" id="pgb-jZ-OaQ"/>
+                <constraint firstItem="7Jl-Mo-Mhw" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="8" id="tG3-6M-FNs"/>
+                <constraint firstItem="omw-JF-UYf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="12" id="vb9-FZ-o2p"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="132" y="154"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

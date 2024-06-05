@@ -1,0 +1,49 @@
+[
+    {
+        "sectionTitle": "Getting Started",
+        "rows": [
+            {
+                "type": "icon",
+                "title": "Quick start Guide",
+                "subtitle": "Learn how to setup and use your VeeaHub",
+                "icon": "rocket-icon",
+                "link": "https://go.veea.com/getstarted",
+                "isActionEnabled": true,
+                "roundedIcon" : true
+            },
+            {
+                "type": "text",
+                "title": "Download VeeaHub Manager guide",
+                "link": "https://veea.zendesk.com/hc/en-us/articles/360021193614-VeeaHub-Manager-Guide/",
+                "isActionEnabled": true,
+                "roundedIcon" : true
+            }
+        ]
+    },
+    {
+        "sectionTitle": "Developing for VeeaHub",
+        "rows": [
+            {
+                "type": "icon",
+                "title": "Developing for VeeaHub",
+                "subtitle": "Learn how to get started with our SDK",
+                "icon": "code-icon",
+                "link": "https://veea.com",
+                 "isActionEnabled": true,
+                 "roundedIcon" : true
+            }
+        ]
+    },
+    {
+        "sectionTitle": "Service Status",
+        "rows": [
+            {
+                "type": "text",
+                "title": "Check Service Status",
+                "link": "https://veea.com",
+                 "isActionEnabled": true,
+                 "roundedIcon" : true
+            }
+        ]
+    }
+]

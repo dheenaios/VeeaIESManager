@@ -1,0 +1,74 @@
+{
+  "background1": {
+    "lightHex": "#FFFFFF",
+    "darkHex": "#1D1D1D"
+  },
+  "background2": {
+    "lightHex": "#F8F8F8",
+    "darkHex": "#1D1D1D"
+  },
+  "background3": {
+    "lightHex": "#EDF4FE",
+    "darkHex": "#3B3B3E"
+  },
+  "text1": {
+    "lightHex": "#000000",
+    "darkHex": "#F5F5F5"
+  },
+  "text2": {
+    "lightHex": "#7D7D7D",
+    "darkHex": "#F5F5F5"
+  },
+  "text3": {
+    "lightHex": "#000000",
+    "darkHex": "#FFFFFF"
+  },
+  "textWhite": {
+    "lightHex": "#FFFFFF",
+    "darkHex": "#FFFFFF"
+  },
+  "textWarningRed1": {
+    "lightHex": "#BA3033",
+    "darkHex": "#BA3033"
+  },
+  "themeTint": {
+    "lightHex": "#307FE2",
+    "darkHex": "#307FE2"
+  },
+  "themeTintLightBackground": {
+    "lightHex": "#EDF5FF",
+    "darkHex": "#3B3B3E"
+  },
+  "statusGreen": {
+    "lightHex": "#5BC937",
+    "darkHex": "#5BC937"
+  },
+  "statusGrey": {
+    "lightHex": "#C7C6C7",
+    "darkHex": "#C7C6C7"
+  },
+  "statusRed": {
+    "lightHex": "#D0321A",
+    "darkHex": "#D0321A"
+  },
+  "statusOrange": {
+    "lightHex": "#fd8d5f",
+    "darkHex": "#fd8d5f"
+  },
+  "switchGreen": {
+    "lightHex": "#61C061",
+    "darkHex": "#61C061"
+  },
+  "accountPurple": {
+    "lightHex": "#AB45BA",
+    "darkHex": "#AB45BA"
+  },
+  "buttonOrange1": {
+    "lightHex": "#DE7E33",
+    "darkHex": "#DE7E33"
+  },
+  "loginSplashScreenBackground": {
+    "lightHex": "#DEE5EF",
+    "darkHex": "#000000"
+  }
+}

@@ -1,0 +1,7 @@
+{
+	 "tags": ["enterprise", "home"],
+	 "url": "https://qa.veea.co/enrollment/enroll/cdaf1bd3-bd00-46f6-b599-a81b45ea5777/processing",
+	 "method": "GET",
+	 "httpCode": 200,
+	 "responseJsonString": "{\"meta\":{\"status\":200,\"message\":null},\"response\":[]}"
+ }

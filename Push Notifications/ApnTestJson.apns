@@ -1,0 +1,15 @@
+{
+   "aps" : {
+      "alert" : {
+         "title" : "Test Push",
+         "subtitle" : "Test push notification",
+         "body" : "Push payload body"
+      },
+      "payload" : {
+        "message" : "Description",
+        "group_id" : "12345678",
+        "mesh_id" : "abcdefg"
+     }
+   },
+   "Simulator Target Bundle": "com.virtuosys.ies.manager"
+}

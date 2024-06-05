@@ -1,0 +1,152 @@
+# Author: Niranjan Ravichandran
+#
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+# Webhook to z-builds-vhm
+slack_fastlane_webhook = "https://hooks.slack.com/services/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"
+
+# Webhook to p-hub-manager
+slack_hub_manager_webhook = "https://hooks.slack.com/services/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"
+
+default_platform(:ios)
+
+platform :ios do
+	error do |lane, exception, options|
+		slack(message: "VHM Error Occured:\n#{exception}", 
+			  slack_url: slack_fastlane_webhook, username: "fastlane-vhm")
+	end
+
+	lane :tests do
+		run_tests(workspace: "IESManager.xcworkspace",
+				  devices: ["iPhone 8s", "iPhone Xs", "iPhone Xs Max"],
+				  scheme: "Release VHM")
+	end
+
+	lane :clean_release do |options|
+		# Reset the repo to a clean state
+		reset_git_repo(force: true)
+		# Get latest version
+		git_pull
+		# Do the release thing
+		release(options)
+	end
+
+	# Parameter prod Bool
+	# Pass prod = True for Production builds
+	lane :release do |options|
+		desc "Push a new beta build to TestFlight"
+
+		prod = options[:prod]
+
+
+		# Make sure we dont destroy someones work
+		# ensure_git_status_clean
+
+		changelog = "Git branch to test - " + git_branch
+		changelog += "Commit Hash" + " - " + last_git_commit[:abbreviated_commit_hash].to_s + "\n" + "Release Notes(release log till last production release) - \n"
+
+		changelog += changelog_from_git_commits(
+			between: [last_git_tag, "HEAD"],
+			pretty: "- %s",
+			date_format: "short",
+			match_lightweight_tag: false,
+			merge_commit_filtering: "exclude_merges"
+		)
+		
+		# Have a clean bundle env
+		bundle_install
+
+
+		install_provisioning_profile(path: "Profiles/VeeaHub_Manager_Release_Profile.mobileprovision")
+
+		# Build number is created by a date string
+		build_date_number = Time.now.strftime("%Y.%m.%d.%H.%M")
+		patch_version_number = Time.now.strftime("%Y%m%d%H%M")
+		
+		# Get latest version number
+		app_version = get_version_number(xcodeproj: "IESManager.xcodeproj", target: "IESManager")
+		# app_version = patch_version_number
+
+		# Increment build number
+		increment_build_number(
+			build_number: build_date_number
+		)
+
+		# Increment Short version number for testflight
+		# increment_version_number(
+		# 	bump_type: "patch",
+		# 	version_number: patch_version_number
+		# )
+		# Disable automatic code signing for release
+		disable_automatic_code_signing(path: "IESManager.xcodeproj")
+
+		app_build_start_time = Time.now.to_f
+		build_app(workspace: "IESManager.xcworkspace", 
+				  scheme: "Release VHM", 
+				  include_bitcode: true, 
+				  export_options: {
+					  provisioningProfiles: {
+						  "com.veea.iesmanager" => "VeeaHub Manager Release Profile"
+					  }
+				  }, 
+				  export_xcargs: "-allowProvisioningUpdates")
+		app_build_elapsed_time = Time.now.to_f - app_build_start_time
+
+		# Enable automatic code signing after release
+		enable_automatic_code_signing(path: "IESManager.xcodeproj")
+
+		# Upload to TestFlight
+		testflight_upload_start_time = Time.now.to_f
+		if prod
+			upload_to_testflight(
+				skip_submission: true,
+				changelog: changelog)
+		else
+			upload_to_testflight(changelog: changelog)
+		end
+		
+		testflight_elapsed_time = Time.now.to_f - testflight_upload_start_time
+
+		# Build IPA
+		slack(message: "Archiving VHM for upload. Version (#{app_version}) Build(#{build_date_number})\n" + 
+			  "*Building #{build_date_number}: Changelog since last tag*\n#{changelog}",
+			  payload: {
+				  "Build Date": Time.new.to_s,
+				  "Built At": `hostname`,
+				  "Build Number": build_date_number,
+				  "App Build Time (min)": app_build_elapsed_time / 60.0,
+				  "Testflight Upload Time (min)": testflight_elapsed_time / 60.0,
+			  },
+			  slack_url: slack_fastlane_webhook, 
+			  username: "fastlane-vhm")
+
+		slack(message: "VeeaHub Manager uploaded to TestFlight. Version (#{app_version}) Build #{build_date_number}. App should be avaiable for download via Testflight. Note: Sometimes the app takes a while to become available to everyone.", 
+			  slack_url: slack_hub_manager_webhook, 
+			  username: "fastlane-vhm")
+
+		# tag should be in form nightly/2019.08.05.15.58
+		# add_git_tag(tag: "nightly/#{build_date_number}")
+		# push_git_tags
+
+	end
+
+	after_each do |lane, options|
+		# ... Executed after each lane
+		# Enable automatic code signing if it was disabled it anywhere
+		enable_automatic_code_signing(path: "IESManager.xcodeproj")
+	end
+
+end

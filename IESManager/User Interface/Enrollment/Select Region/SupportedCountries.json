@@ -1,0 +1,15 @@
+{
+    "supported" : ["CA", "CN", "DE", "ES", "FR", "GB", "JP", "KR", "PL", "TW", "US"],
+    "defaults": {
+        "Africa" : "DE",
+        "America" : "US",
+        "Antarctica" : "US",
+        "Arctic" : "US",
+        "Asia" : "CN",
+        "Atlantic" : "US",
+        "Australia" : "US",
+        "Europe" : "DE",
+        "Indian" : "CN",
+        "Pacific" : "US"
+    }
+}

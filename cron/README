@@ -1,0 +1,30 @@
+This directory is for files relating to the build of vh-manager-ios 
+on the OS X build machine.
+
+It has a launchd cron job that every day calls the run script 
+in this directory.
+
+The run script calls fastlane.
+
+
+
+See Jobs
+launchctl list
+
+Load job
+
+launchctl load com.veea.vh-manager-ios.plist
+launchctl start com.veea.vh-manager-ios.plist
+
+Unload 
+launchctl stop com.veea.vh-manager-ios.plist
+launchctl unload com.veea.vh-manager-ios.plist
+
+For testing, add the following key:
+```
+<key>RunAtLoad</key>
+<true/>
+```
+
+Quick Reload command:
+launchctl unload com.veea.vh-manager-ios.plist && launchctl load com.veea.vh-manager-ios.plist

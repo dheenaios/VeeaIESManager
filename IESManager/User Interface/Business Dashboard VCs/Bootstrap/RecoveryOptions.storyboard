@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aOx-4i-7mN">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="wWI-Ll-raN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aOx-4i-7mN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="b34-ki-D5T">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.34901960780000002" green="0.33725490200000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ibq-5l-GUL" kind="relationship" relationship="rootViewController" id="FZg-gW-v2f"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k2x-3W-uPW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-422" y="1581"/>
+        </scene>
+        <!--Bootstrap & Recovery-->
+        <scene sceneID="87N-LE-LqR">
+            <objects>
+                <viewController storyboardIdentifier="BootstrapViewController" id="ibq-5l-GUL" customClass="BootstrapViewController" customModule="IESManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SDx-Ol-CW6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jbx-24-him">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="mXH-ko-o6Q">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="616"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="00C-pt-WZc">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                                <color key="backgroundColor" name="Background Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="a1t-Au-9La"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q0n-Tn-fRW">
+                                                <rect key="frame" x="0.0" y="44" width="414" height="264"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Network reinstall" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FFm-L5-X9O">
+                                                        <rect key="frame" x="16" y="8" width="199.5" height="29"/>
+                                                        <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" weight="heavy" pointSize="24"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iRn-fe-VVf">
+                                                        <rect key="frame" x="16" y="45" width="390" height="101.5"/>
+                                                        <string key="text">The latest software and configuration will be downloaded from the cloud and reinstalled on the unit. Any configuration changes made since enrollment will be lost. Any subscriptions you have will not be lost. </string>
+                                                        <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonname="Ubuntu" family="Ubuntu" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yB5-az-5TC">
+                                                        <rect key="frame" x="71.5" y="178.5" width="271" height="61.5"/>
+                                                        <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" weight="heavy" pointSize="24"/>
+                                                        <state key="normal" title="Begin Network reinstall">
+                                                            <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="beginBootstrapTapped:" destination="ibq-5l-GUL" eventType="touchUpInside" id="K5o-Mn-ZYp"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="FFm-L5-X9O" firstAttribute="leading" secondItem="q0n-Tn-fRW" secondAttribute="leading" constant="16" id="D7v-BK-PZz"/>
+                                                    <constraint firstAttribute="bottom" secondItem="yB5-az-5TC" secondAttribute="bottom" constant="24" id="DFa-aX-Qgt"/>
+                                                    <constraint firstItem="yB5-az-5TC" firstAttribute="centerX" secondItem="q0n-Tn-fRW" secondAttribute="centerX" id="GQk-s6-czc"/>
+                                                    <constraint firstAttribute="width" constant="414" id="NsF-l4-Gzn"/>
+                                                    <constraint firstAttribute="trailing" secondItem="iRn-fe-VVf" secondAttribute="trailing" constant="8" id="Y0C-a8-YEw"/>
+                                                    <constraint firstItem="iRn-fe-VVf" firstAttribute="top" secondItem="FFm-L5-X9O" secondAttribute="bottom" constant="8" id="c80-32-Iay"/>
+                                                    <constraint firstItem="yB5-az-5TC" firstAttribute="top" secondItem="iRn-fe-VVf" secondAttribute="bottom" constant="32" id="hkq-rJ-JnG"/>
+                                                    <constraint firstItem="iRn-fe-VVf" firstAttribute="leading" secondItem="q0n-Tn-fRW" secondAttribute="leading" constant="16" id="tMy-T4-0sF"/>
+                                                    <constraint firstItem="FFm-L5-X9O" firstAttribute="top" secondItem="q0n-Tn-fRW" secondAttribute="top" constant="8" id="yTH-yQ-4Eh"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R1k-7L-er7">
+                                                <rect key="frame" x="0.0" y="308" width="414" height="44"/>
+                                                <color key="backgroundColor" name="Background Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="1Vw-gl-ewH"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="03a-zc-fvx">
+                                                <rect key="frame" x="0.0" y="352" width="414" height="264"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Local reinstall" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4gk-JH-3AU">
+                                                        <rect key="frame" x="16" y="8" width="162.5" height="29"/>
+                                                        <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" weight="heavy" pointSize="24"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mBE-bS-oEZ">
+                                                        <rect key="frame" x="16" y="45" width="390" height="81.5"/>
+                                                        <string key="text">The current software and configuration maintained locally will be reinstalled on the unit. Any configuration changes made since enrollment will be lost. Any subscriptions you have will not be lost. </string>
+                                                        <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonname="Ubuntu" family="Ubuntu" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TL7-GN-dX9">
+                                                        <rect key="frame" x="90" y="158.5" width="234" height="81.5"/>
+                                                        <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" weight="heavy" pointSize="24"/>
+                                                        <state key="normal" title="Begin Local reinstall">
+                                                            <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="beginReinstallTapped:" destination="ibq-5l-GUL" eventType="touchUpInside" id="Yby-tt-wQd"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="TL7-GN-dX9" secondAttribute="bottom" constant="24" id="2Qo-5j-Mbz"/>
+                                                    <constraint firstItem="4gk-JH-3AU" firstAttribute="leading" secondItem="03a-zc-fvx" secondAttribute="leading" constant="16" id="4Fp-9E-uOv"/>
+                                                    <constraint firstItem="mBE-bS-oEZ" firstAttribute="leading" secondItem="03a-zc-fvx" secondAttribute="leading" constant="16" id="NQJ-bS-q53"/>
+                                                    <constraint firstItem="TL7-GN-dX9" firstAttribute="centerX" secondItem="03a-zc-fvx" secondAttribute="centerX" id="SSo-R3-IWD"/>
+                                                    <constraint firstItem="4gk-JH-3AU" firstAttribute="top" secondItem="03a-zc-fvx" secondAttribute="top" constant="8" id="WHC-Li-bXy"/>
+                                                    <constraint firstItem="mBE-bS-oEZ" firstAttribute="top" secondItem="4gk-JH-3AU" secondAttribute="bottom" constant="8" id="Wgy-ey-FgJ"/>
+                                                    <constraint firstItem="TL7-GN-dX9" firstAttribute="top" secondItem="mBE-bS-oEZ" secondAttribute="bottom" constant="32" id="a5K-cr-Skh"/>
+                                                    <constraint firstAttribute="trailing" secondItem="mBE-bS-oEZ" secondAttribute="trailing" constant="8" id="lv7-c6-1or"/>
+                                                    <constraint firstAttribute="width" constant="414" id="qRo-3d-2eU"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="mXH-ko-o6Q" firstAttribute="width" secondItem="jbx-24-him" secondAttribute="width" id="3Ge-Yt-Xhn"/>
+                                    <constraint firstItem="mXH-ko-o6Q" firstAttribute="leading" secondItem="jbx-24-him" secondAttribute="leading" id="7he-ug-Mlp"/>
+                                    <constraint firstAttribute="trailing" secondItem="mXH-ko-o6Q" secondAttribute="trailing" id="O1F-tn-Th0"/>
+                                    <constraint firstItem="mXH-ko-o6Q" firstAttribute="top" secondItem="jbx-24-him" secondAttribute="top" id="YDw-6h-B3M"/>
+                                    <constraint firstAttribute="bottom" secondItem="mXH-ko-o6Q" secondAttribute="bottom" id="rEg-yI-3Ia"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="uev-i8-4vf"/>
+                        <constraints>
+                            <constraint firstItem="uev-i8-4vf" firstAttribute="trailing" secondItem="jbx-24-him" secondAttribute="trailing" id="3CI-TH-joZ"/>
+                            <constraint firstAttribute="bottom" secondItem="jbx-24-him" secondAttribute="bottom" id="9eg-St-Yud"/>
+                            <constraint firstItem="jbx-24-him" firstAttribute="leading" secondItem="uev-i8-4vf" secondAttribute="leading" id="o7u-Ja-0mx"/>
+                            <constraint firstItem="jbx-24-him" firstAttribute="top" secondItem="uev-i8-4vf" secondAttribute="top" id="yOz-1S-q0z"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Bootstrap &amp; Recovery" id="Fjr-gz-mjC">
+                        <barButtonItem key="rightBarButtonItem" title="Done" style="done" id="E1c-CE-zcI">
+                            <connections>
+                                <action selector="cancel:" destination="ibq-5l-GUL" id="3ut-J7-dHw"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BDg-oM-0k4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-423.1884057971015" y="2282.8125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="Background Color">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

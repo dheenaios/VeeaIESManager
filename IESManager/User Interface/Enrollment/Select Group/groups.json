@@ -1,0 +1,54 @@
+[
+  {
+    "authzResource": "3a75546e-ecc3-4c7a-ab24-6e2194c25450",
+    "contactId": "8dc36a59-e1b5-4eb0-a133-429bd8318acb",
+    "counts": {
+      "children": 0,
+      "devices": 0,
+      "meshes": 0,
+      "users": 3
+    },
+    "id": "08847334-5e39-4fd8-b83a-70051ca42e78",
+    "name": "olena.lviv-test192@yahoo.com's G",
+    "path": [
+      {
+        "id": "1caeb62c-25f2-4cbb-b336-def537447da0",
+        "name": "root"
+      },
+      {
+        "id": "fc6a296d-fb35-4080-af73-b8c58e397cde",
+        "name": "SelfRegistration"
+      },
+      {
+        "id": "08847334-5e39-4fd8-b83a-70051ca42e78",
+        "name": "olena.lviv-test192@yahoo.com's G"
+      }
+    ]
+  },
+  {
+    "authzResource": "628d4c11-5d8c-4877-9ee7-722fd613fa19",
+    "contactId": "a0e5698e-c2a9-4691-8ced-6fe2d691803a",
+    "counts": {
+      "children": 0,
+      "devices": 1,
+      "meshes": 1,
+      "users": 3
+    },
+    "id": "653eef76-7c32-4beb-ab74-dbef734b655b",
+    "name": "rajat.chatterjee@max2.com's Group",
+    "path": [
+      {
+        "id": "1caeb62c-25f2-4cbb-b336-def537447da0",
+        "name": "root"
+      },
+      {
+        "id": "fc6a296d-fb35-4080-af73-b8c58e397cde",
+        "name": "SelfRegistration"
+      },
+      {
+        "id": "653eef76-7c32-4beb-ab74-dbef734b655b",
+        "name": "rajat.chatterjee@max2.com's Group"
+      }
+    ]
+  }
+]

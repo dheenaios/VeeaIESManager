@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-R.ttf">
+            <string>Ubuntu</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InlineHelpView" customModule="IESManager" customModuleProvider="target">
+            <connections>
+                <outlet property="learnMoreLabel" destination="2xh-ys-pmd" id="g3S-xB-9QW"/>
+                <outlet property="rootView" destination="iN0-l3-epB" id="aaB-6o-qWz"/>
+                <outlet property="textLabel" destination="wh9-3b-QdW" id="1B3-az-IwD"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="61"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="31" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wh9-3b-QdW">
+                    <rect key="frame" x="20" y="8" width="374" height="22"/>
+                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="13"/>
+                    <color key="textColor" name="TitleTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Learn More" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2xh-ys-pmd">
+                    <rect key="frame" x="20" y="38" width="374" height="15"/>
+                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="13"/>
+                    <color key="textColor" name="Sign Up Blue"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YwP-ar-RxK">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="61"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <action selector="learnMoreTapped:" destination="-1" eventType="touchUpInside" id="Y6m-YI-35C"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="YwP-ar-RxK" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ImE-bZ-tAZ"/>
+                <constraint firstItem="wh9-3b-QdW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="Qxj-nc-9mg"/>
+                <constraint firstAttribute="trailing" secondItem="wh9-3b-QdW" secondAttribute="trailing" constant="20" symbolic="YES" id="WNJ-az-iz2"/>
+                <constraint firstItem="YwP-ar-RxK" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="aOl-CA-fSc"/>
+                <constraint firstItem="2xh-ys-pmd" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="lyG-k3-XgO"/>
+                <constraint firstItem="YwP-ar-RxK" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="nON-q3-xWB"/>
+                <constraint firstItem="YwP-ar-RxK" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="rBM-bU-4Ml"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="2xh-ys-pmd" secondAttribute="bottom" constant="8" id="uPR-ll-nuO"/>
+                <constraint firstItem="wh9-3b-QdW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="uVy-h2-g86"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="2xh-ys-pmd" secondAttribute="trailing" constant="20" id="vEo-4M-5Sv"/>
+                <constraint firstItem="2xh-ys-pmd" firstAttribute="top" secondItem="wh9-3b-QdW" secondAttribute="bottom" constant="8" symbolic="YES" id="xHy-fl-6cG"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="137.68115942028987" y="-203.90625"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="Sign Up Blue">
+            <color red="0.23137254901960785" green="0.36470588235294116" blue="0.6705882352941176" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TitleTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </namedColor>
+    </resources>
+</document>

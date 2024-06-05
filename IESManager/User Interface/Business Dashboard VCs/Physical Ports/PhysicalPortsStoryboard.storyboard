@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ie8-dK-OS7">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-R.ttf">
+            <string>Ubuntu</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="uGY-5s-mZX">
+            <objects>
+                <navigationController storyboardIdentifier="portsNavigationController" id="ie8-dK-OS7" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ald-KQ-Eu3">
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="5Eu-Rb-cPe" kind="relationship" relationship="rootViewController" id="SN9-qY-bHR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1fo-IK-KSR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-771" y="554"/>
+        </scene>
+        <!--Ports View Controller-->
+        <scene sceneID="q03-SZ-amB">
+            <objects>
+                <viewController storyboardIdentifier="PortConfigViewController" id="5Eu-Rb-cPe" customClass="PortsViewController" customModule="IESManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Yao-6Q-BBL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qNy-Xh-1RR">
+                                <rect key="frame" x="0.0" y="92" width="414" height="60"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JKJ-4V-dWq" customClass="PortsPickerView" customModule="IESManager" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="8" width="398" height="44"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="JKJ-4V-dWq" secondAttribute="trailing" constant="8" id="2xO-8a-Ena"/>
+                                    <constraint firstAttribute="bottom" secondItem="JKJ-4V-dWq" secondAttribute="bottom" constant="8" id="GsK-97-ucQ"/>
+                                    <constraint firstItem="JKJ-4V-dWq" firstAttribute="leading" secondItem="qNy-Xh-1RR" secondAttribute="leading" constant="8" id="TAD-cc-YT1"/>
+                                    <constraint firstItem="JKJ-4V-dWq" firstAttribute="top" secondItem="qNy-Xh-1RR" secondAttribute="top" constant="8" id="mA8-7q-qgB"/>
+                                    <constraint firstAttribute="height" constant="60" id="mw6-CC-xXG"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hwQ-yQ-lAx">
+                                <rect key="frame" x="0.0" y="152" width="414" height="744"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="V1l-iF-jwj">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="631"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xB6-Ej-wAm" customClass="InlineHelpView" customModule="IESManager" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="91"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="91" id="qaX-zu-jZZ"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YOd-TR-8O0">
+                                                <rect key="frame" x="0.0" y="91" width="414" height="60"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D6j-Qk-Ie7" customClass="PortHealthPill" customModule="IESManager" customModuleProvider="target">
+                                                        <rect key="frame" x="8" y="8" width="398" height="44"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="D6j-Qk-Ie7" secondAttribute="trailing" constant="8" id="9cl-RW-tdn"/>
+                                                    <constraint firstItem="D6j-Qk-Ie7" firstAttribute="leading" secondItem="YOd-TR-8O0" secondAttribute="leading" constant="8" id="Hxs-IF-sxc"/>
+                                                    <constraint firstAttribute="height" constant="60" id="UNK-TE-zAl"/>
+                                                    <constraint firstAttribute="bottom" secondItem="D6j-Qk-Ie7" secondAttribute="bottom" constant="8" id="bAI-yT-HmM"/>
+                                                    <constraint firstItem="D6j-Qk-Ie7" firstAttribute="top" secondItem="YOd-TR-8O0" secondAttribute="top" constant="8" id="rTF-kc-gNA"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X90-eG-1Lf" customClass="RowView" customModule="IESManager" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="151" width="414" height="60"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="7V7-rZ-BiF"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Mesh Network"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="subTitle" value="Type of Network"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="valueText" value=" "/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hideValueLabel" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ATy-d6-Hyx" customClass="RowImgView" customModule="IESManager" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="211" width="414" height="60"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="7v9-Ct-eR2"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Port name"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="subTitle" value="This is the port name"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="valueText" value=" "/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hideValueLabel" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j4v-3W-pdU" customClass="RowView" customModule="IESManager" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="271" width="414" height="60"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="idC-t1-gm4"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Role"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="subTitle" value="The role for this port"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="valueText" value=" "/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hideValueLabel" value="NO"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2c2-F9-kd0" customClass="RowSwitchView" customModule="IESManager" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="331" width="414" height="60"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="370-04-5i5"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Enable"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="subTitle" value="Activate this port"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="valueText" value=" LAN"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hideValueLabel" value="NO"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mlH-Fv-eQ4" customClass="RowSwitchView" customModule="IESManager" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="391" width="414" height="60"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="hj1-V0-gcq"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Mesh"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="valueText" value=" LAN"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hideValueLabel" value="NO"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mYx-1B-HZO" customClass="RowView" customModule="IESManager" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="451" width="414" height="60"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="WBw-7x-m7H"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Type"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="valueText" value="Onboard"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hideValueLabel" value="NO"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hideDisclosureIndicator" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cNd-ow-inH" customClass="RowIndicatorView" customModule="IESManager" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="511" width="414" height="60"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="zRX-IM-cFl"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="valueText" value="Onboard"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hideValueLabel" value="NO"/>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="app_server_black"/>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="indicatorColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Link"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mUk-np-d4Z">
+                                                <rect key="frame" x="0.0" y="571" width="414" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dVW-qK-cYT">
+                                                        <rect key="frame" x="8" y="10" width="398" height="40"/>
+                                                        <color key="backgroundColor" red="0.74732273819999995" green="0.15070116519999999" blue="0.1060458794" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="17"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title=" Reset Port" image="reload_icon"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="resetButtonTapped:" destination="5Eu-Rb-cPe" eventType="touchUpInside" id="Ad7-uE-JVd"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="dVW-qK-cYT" secondAttribute="bottom" constant="10" id="8iX-qU-PKo"/>
+                                                    <constraint firstItem="dVW-qK-cYT" firstAttribute="top" secondItem="mUk-np-d4Z" secondAttribute="top" constant="10" id="Aav-vO-7gs"/>
+                                                    <constraint firstAttribute="trailing" secondItem="dVW-qK-cYT" secondAttribute="trailing" constant="8" id="Aib-mJ-0Af"/>
+                                                    <constraint firstItem="dVW-qK-cYT" firstAttribute="leading" secondItem="mUk-np-d4Z" secondAttribute="leading" constant="8" id="NWQ-O7-TI9"/>
+                                                    <constraint firstAttribute="height" constant="60" id="lSl-uW-vge"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="V1l-iF-jwj" secondAttribute="bottom" id="XnD-I0-zRH"/>
+                                    <constraint firstItem="V1l-iF-jwj" firstAttribute="top" secondItem="hwQ-yQ-lAx" secondAttribute="top" id="gXV-9c-ore"/>
+                                    <constraint firstItem="V1l-iF-jwj" firstAttribute="width" secondItem="hwQ-yQ-lAx" secondAttribute="width" id="nha-pg-oPx"/>
+                                    <constraint firstItem="V1l-iF-jwj" firstAttribute="leading" secondItem="hwQ-yQ-lAx" secondAttribute="leading" id="s94-mD-4Dx"/>
+                                    <constraint firstItem="V1l-iF-jwj" firstAttribute="trailing" secondItem="hwQ-yQ-lAx" secondAttribute="trailing" id="vLr-kG-Ke2"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eAf-SZ-trY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="hwQ-yQ-lAx" secondAttribute="bottom" id="7me-Ny-h4E"/>
+                            <constraint firstItem="hwQ-yQ-lAx" firstAttribute="top" secondItem="qNy-Xh-1RR" secondAttribute="bottom" id="iJC-Pr-Eda"/>
+                            <constraint firstItem="qNy-Xh-1RR" firstAttribute="leading" secondItem="eAf-SZ-trY" secondAttribute="leading" id="k4R-gY-xxM"/>
+                            <constraint firstItem="hwQ-yQ-lAx" firstAttribute="leading" secondItem="eAf-SZ-trY" secondAttribute="leading" id="tWW-3s-SXW"/>
+                            <constraint firstItem="qNy-Xh-1RR" firstAttribute="trailing" secondItem="eAf-SZ-trY" secondAttribute="trailing" id="tfb-Dt-l8s"/>
+                            <constraint firstItem="hwQ-yQ-lAx" firstAttribute="trailing" secondItem="eAf-SZ-trY" secondAttribute="trailing" id="yuN-yc-ndN"/>
+                            <constraint firstItem="qNy-Xh-1RR" firstAttribute="top" secondItem="eAf-SZ-trY" secondAttribute="top" id="zhf-f8-BAN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="c1d-WU-IiD">
+                        <barButtonItem key="rightBarButtonItem" title="Apply" style="done" id="IIr-Rh-d9m">
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="done:" destination="5Eu-Rb-cPe" id="3Cd-I8-kGc"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="enableRow" destination="2c2-F9-kd0" id="eEe-mW-5Ro"/>
+                        <outlet property="healthPill" destination="D6j-Qk-Ie7" id="cMs-Bc-BVP"/>
+                        <outlet property="inlineHelpView" destination="xB6-Ej-wAm" id="TbI-ay-uVy"/>
+                        <outlet property="linkRow" destination="cNd-ow-inH" id="QAv-eF-hCw"/>
+                        <outlet property="meshOrNetworkRow" destination="X90-eG-1Lf" id="aYR-zt-KTw"/>
+                        <outlet property="meshRow" destination="mlH-Fv-eQ4" id="eU4-o1-PTn"/>
+                        <outlet property="portNameRow" destination="ATy-d6-Hyx" id="adr-Mk-Iqm"/>
+                        <outlet property="portPicker" destination="JKJ-4V-dWq" id="bMw-aX-K4p"/>
+                        <outlet property="resetButtonRow" destination="mUk-np-d4Z" id="kvY-su-n7a"/>
+                        <outlet property="roleRow" destination="j4v-3W-pdU" id="B6s-DE-47q"/>
+                        <outlet property="typeRow" destination="mYx-1B-HZO" id="Il4-4C-140"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kSu-if-DCe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="205.79710144927537" y="549.77678571428567"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="app_server_black" width="36" height="36"/>
+        <image name="reload_icon" width="13" height="13.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

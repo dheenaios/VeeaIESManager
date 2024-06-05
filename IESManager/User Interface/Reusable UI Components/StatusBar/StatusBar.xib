@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-M.ttf">
+            <string>Ubuntu-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StatusBar" customModule="IESManager" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="67v-mu-55r"/>
+                <outlet property="iconImageView" destination="ZNE-kM-ED8" id="MUd-H0-jYK"/>
+                <outlet property="imageWidthConstraint" destination="f4N-8h-S8A" id="WUo-UR-EOf"/>
+                <outlet property="textLabel" destination="QIj-Yi-ZX2" id="WDZ-4Z-iOo"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nf4-qm-L4n">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" image="checkmark.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ZNE-kM-ED8">
+                            <rect key="frame" x="8" y="17.5" width="26" height="25"/>
+                            <color key="tintColor" name="DashboardIconGreen"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="26" id="d8z-aP-gPo"/>
+                                <constraint firstAttribute="width" constant="26" id="f4N-8h-S8A"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QIj-Yi-ZX2">
+                            <rect key="frame" x="42" y="0.0" width="356" height="60"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <string key="text">Label
+Label</string>
+                            <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="ZNE-kM-ED8" firstAttribute="leading" secondItem="nf4-qm-L4n" secondAttribute="leading" constant="8" id="22q-v4-eal"/>
+                        <constraint firstAttribute="bottom" secondItem="QIj-Yi-ZX2" secondAttribute="bottom" id="BJH-oA-MtJ"/>
+                        <constraint firstItem="QIj-Yi-ZX2" firstAttribute="top" secondItem="nf4-qm-L4n" secondAttribute="top" id="LBR-yW-0Me"/>
+                        <constraint firstItem="QIj-Yi-ZX2" firstAttribute="leading" secondItem="ZNE-kM-ED8" secondAttribute="trailing" constant="8" symbolic="YES" id="sP1-B9-z5i"/>
+                        <constraint firstAttribute="trailing" secondItem="QIj-Yi-ZX2" secondAttribute="trailing" constant="16" id="ve8-KW-Hoh"/>
+                        <constraint firstItem="ZNE-kM-ED8" firstAttribute="centerY" secondItem="nf4-qm-L4n" secondAttribute="centerY" id="wDB-M5-WvL"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" name="Folder Color"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="nf4-qm-L4n" secondAttribute="trailing" id="Hg8-3v-eFd"/>
+                <constraint firstAttribute="bottom" secondItem="nf4-qm-L4n" secondAttribute="bottom" id="QcW-Ic-UUy"/>
+                <constraint firstItem="nf4-qm-L4n" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="qwI-ih-zPj"/>
+                <constraint firstItem="nf4-qm-L4n" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="vma-fZ-fkZ"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="140.57971014492756" y="-109.15178571428571"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="checkmark.circle.fill" catalog="system" width="128" height="121"/>
+        <namedColor name="DashboardIconGreen">
+            <color red="0.031372549019607843" green="0.72549019607843135" blue="0.031372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Folder Color">
+            <color red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

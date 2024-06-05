@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sOw-aM-XVr">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-M.ttf">
+            <string>Ubuntu-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Home Advanced Settings Menu Table View Controller-->
+        <scene sceneID="tgd-IB-nKr">
+            <objects>
+                <tableViewController storyboardIdentifier="HomeAdvancedSettingsMenuTableViewController" id="P9Q-aO-tOP" customClass="HomeAdvancedSettingsMenuTableViewController" customModule="IESManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" id="AXN-kd-zQH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <sections>
+                            <tableViewSection headerTitle="Local Area Network" id="eFS-gm-18q">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="44" id="sZc-mK-ORF">
+                                        <rect key="frame" x="16" y="49.5" width="343" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sZc-mK-ORF" id="ubu-yk-Bv0">
+                                            <rect key="frame" x="0.0" y="0.0" width="318.5" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wifi_logo_ssid" translatesAutoresizingMaskIntoConstraints="NO" id="h5a-VD-eVi">
+                                                    <rect key="frame" x="16" y="11.5" width="21.5" height="21.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21.5" id="Au1-8Y-kA8"/>
+                                                        <constraint firstAttribute="width" constant="21.5" id="DwE-Jc-8ob"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wi-Fi Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SbN-Pk-1sk">
+                                                    <rect key="frame" x="45.5" y="11.5" width="265" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="h5a-VD-eVi" firstAttribute="leading" secondItem="ubu-yk-Bv0" secondAttribute="leadingMargin" id="3fg-h1-Gf0"/>
+                                                <constraint firstItem="SbN-Pk-1sk" firstAttribute="centerY" secondItem="ubu-yk-Bv0" secondAttribute="centerY" id="F0k-D8-n0h"/>
+                                                <constraint firstItem="SbN-Pk-1sk" firstAttribute="leading" secondItem="h5a-VD-eVi" secondAttribute="trailing" constant="8" id="Xn7-sy-KSO"/>
+                                                <constraint firstItem="h5a-VD-eVi" firstAttribute="centerY" secondItem="ubu-yk-Bv0" secondAttribute="centerY" id="jhJ-hT-3GC"/>
+                                                <constraint firstAttribute="trailing" secondItem="SbN-Pk-1sk" secondAttribute="trailing" constant="8" id="yGs-Jj-hma"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="44" id="dIy-sj-9Hq">
+                                        <rect key="frame" x="16" y="93.5" width="343" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dIy-sj-9Hq" id="usB-du-cVE">
+                                            <rect key="frame" x="0.0" y="0.0" width="318.5" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wifi_logo_ssid" translatesAutoresizingMaskIntoConstraints="NO" id="BAx-E4-Ij1">
+                                                    <rect key="frame" x="16" y="11.5" width="21.5" height="21.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="21.5" id="AlN-mb-UMu"/>
+                                                        <constraint firstAttribute="height" constant="21.5" id="Tn8-uc-0GX"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DHCP Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ssc-MQ-m39">
+                                                    <rect key="frame" x="45.5" y="11.5" width="265" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="BAx-E4-Ij1" firstAttribute="leading" secondItem="usB-du-cVE" secondAttribute="leadingMargin" id="9mV-Fp-n1a"/>
+                                                <constraint firstItem="BAx-E4-Ij1" firstAttribute="centerY" secondItem="usB-du-cVE" secondAttribute="centerY" id="Phd-J3-A32"/>
+                                                <constraint firstAttribute="trailing" secondItem="Ssc-MQ-m39" secondAttribute="trailing" constant="8" id="oh5-74-hHK"/>
+                                                <constraint firstItem="Ssc-MQ-m39" firstAttribute="leading" secondItem="BAx-E4-Ij1" secondAttribute="trailing" constant="8" id="vQF-b6-Rbh"/>
+                                                <constraint firstItem="Ssc-MQ-m39" firstAttribute="centerY" secondItem="usB-du-cVE" secondAttribute="centerY" id="zed-EX-OcE"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="44" id="NKE-m6-eB2">
+                                        <rect key="frame" x="16" y="137.5" width="343" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NKE-m6-eB2" id="oed-vg-sqn">
+                                            <rect key="frame" x="0.0" y="0.0" width="318.5" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wifi_logo_ssid" translatesAutoresizingMaskIntoConstraints="NO" id="a7m-0X-C59">
+                                                    <rect key="frame" x="16" y="11.5" width="21.5" height="21.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21.5" id="QgL-HX-9M3"/>
+                                                        <constraint firstAttribute="width" constant="21.5" id="nc5-Rr-sGf"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reserved IP Addresses" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kLz-sp-vJ8">
+                                                    <rect key="frame" x="45.5" y="11.5" width="265" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="a7m-0X-C59" firstAttribute="leading" secondItem="oed-vg-sqn" secondAttribute="leadingMargin" id="15Q-fy-OYh"/>
+                                                <constraint firstAttribute="trailing" secondItem="kLz-sp-vJ8" secondAttribute="trailing" constant="8" id="PiE-Yw-M55"/>
+                                                <constraint firstItem="kLz-sp-vJ8" firstAttribute="centerY" secondItem="oed-vg-sqn" secondAttribute="centerY" id="SNg-9R-bHB"/>
+                                                <constraint firstItem="kLz-sp-vJ8" firstAttribute="leading" secondItem="a7m-0X-C59" secondAttribute="trailing" constant="8" id="h9O-7B-bhw"/>
+                                                <constraint firstItem="a7m-0X-C59" firstAttribute="centerY" secondItem="oed-vg-sqn" secondAttribute="centerY" id="siq-3P-JEI"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Clients" id="oox-vu-IId">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="44" id="AsC-Ak-rOz">
+                                        <rect key="frame" x="16" y="231.5" width="343" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AsC-Ak-rOz" id="1ti-aR-Qsr">
+                                            <rect key="frame" x="0.0" y="0.0" width="318.5" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wifi_logo_ssid" translatesAutoresizingMaskIntoConstraints="NO" id="slg-rm-QEB">
+                                                    <rect key="frame" x="16" y="11.5" width="21.5" height="21.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21.5" id="JHi-2X-728"/>
+                                                        <constraint firstAttribute="width" constant="21.5" id="lQe-iB-YEO"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connected Devices" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nff-eA-r6Y">
+                                                    <rect key="frame" x="45.5" y="11.5" width="265" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="nff-eA-r6Y" firstAttribute="leading" secondItem="slg-rm-QEB" secondAttribute="trailing" constant="8" id="0Bd-wb-hfS"/>
+                                                <constraint firstItem="slg-rm-QEB" firstAttribute="leading" secondItem="1ti-aR-Qsr" secondAttribute="leadingMargin" id="Byg-zu-tj7"/>
+                                                <constraint firstAttribute="trailing" secondItem="nff-eA-r6Y" secondAttribute="trailing" constant="8" id="fEc-vU-nPK"/>
+                                                <constraint firstItem="nff-eA-r6Y" firstAttribute="centerY" secondItem="1ti-aR-Qsr" secondAttribute="centerY" id="qUX-FY-hWX"/>
+                                                <constraint firstItem="slg-rm-QEB" firstAttribute="centerY" secondItem="1ti-aR-Qsr" secondAttribute="centerY" id="wLK-gG-9a9"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="P9Q-aO-tOP" id="G7M-Hq-teD"/>
+                            <outlet property="delegate" destination="P9Q-aO-tOP" id="gPz-tt-6ev"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ags-S9-j9m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3182" y="107"/>
+        </scene>
+        <!--Wi Fi Settings View Controller-->
+        <scene sceneID="mlf-Z3-dwt">
+            <objects>
+                <viewController id="sOw-aM-XVr" customClass="WiFiSettingsViewController" customModule="IESManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="s2V-3T-ZR7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="dzH-gz-YeA">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="s6g-Lb-8av">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" rowHeight="70" id="kCa-MO-b1o" customClass="WiFiSettingsTableViewCell" customModule="IESManager" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="69.5" width="343" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kCa-MO-b1o" id="wj5-3L-Rjx">
+                                            <rect key="frame" x="0.0" y="0.0" width="318.5" height="70"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wifi_logo_ssid" translatesAutoresizingMaskIntoConstraints="NO" id="M3b-yD-lcg">
+                                                    <rect key="frame" x="16" y="11" width="21.5" height="21.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="21.5" id="1Wh-Dt-7MV"/>
+                                                        <constraint firstAttribute="height" constant="21.5" id="AKC-ms-SlA"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wi-Fi Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XpG-4q-vLp">
+                                                    <rect key="frame" x="45.5" y="11.5" width="265" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Some SSID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U2i-2G-t9r">
+                                                    <rect key="frame" x="45.5" y="36.5" width="265" height="21"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a28-4P-uMw">
+                                                    <rect key="frame" x="282.5" y="39" width="20" height="16"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="20" id="C4x-aA-2UY"/>
+                                                        <constraint firstAttribute="height" constant="16" id="Lhx-mg-SAq"/>
+                                                    </constraints>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                    <state key="normal" title="Button" image="eye"/>
+                                                    <connections>
+                                                        <action selector="eyeButtonTapped:" destination="kCa-MO-b1o" eventType="touchUpInside" id="0L6-WB-jdm"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="XpG-4q-vLp" firstAttribute="height" secondItem="M3b-yD-lcg" secondAttribute="height" multiplier="0.976744" id="4Kc-Oo-4nx"/>
+                                                <constraint firstAttribute="trailing" secondItem="XpG-4q-vLp" secondAttribute="trailing" constant="8" id="9Ar-cH-xZT"/>
+                                                <constraint firstItem="U2i-2G-t9r" firstAttribute="width" secondItem="XpG-4q-vLp" secondAttribute="width" id="QpE-YF-Y11"/>
+                                                <constraint firstItem="U2i-2G-t9r" firstAttribute="top" secondItem="XpG-4q-vLp" secondAttribute="bottom" constant="4" id="Y3z-FS-hAc"/>
+                                                <constraint firstItem="U2i-2G-t9r" firstAttribute="trailing" secondItem="XpG-4q-vLp" secondAttribute="trailing" id="gVa-85-5hY"/>
+                                                <constraint firstItem="a28-4P-uMw" firstAttribute="centerY" secondItem="U2i-2G-t9r" secondAttribute="centerY" id="hfW-Ds-qvF"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="a28-4P-uMw" secondAttribute="trailing" constant="8" id="kEG-xX-fOO"/>
+                                                <constraint firstItem="M3b-yD-lcg" firstAttribute="top" secondItem="wj5-3L-Rjx" secondAttribute="topMargin" id="kUX-1e-gvW"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="U2i-2G-t9r" secondAttribute="bottom" constant="1.5" id="lNM-fU-dFt"/>
+                                                <constraint firstItem="XpG-4q-vLp" firstAttribute="leading" secondItem="M3b-yD-lcg" secondAttribute="trailing" constant="8" id="otD-w0-xTw"/>
+                                                <constraint firstItem="XpG-4q-vLp" firstAttribute="centerY" secondItem="M3b-yD-lcg" secondAttribute="centerY" id="xZc-0m-ZOp"/>
+                                                <constraint firstItem="M3b-yD-lcg" firstAttribute="leading" secondItem="wj5-3L-Rjx" secondAttribute="leadingMargin" id="zMm-Pd-HC0"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="eyeButton" destination="a28-4P-uMw" id="Hwt-5j-umK"/>
+                                            <outlet property="iconImageView" destination="M3b-yD-lcg" id="PN5-S1-WWP"/>
+                                            <outlet property="titleLabel" destination="XpG-4q-vLp" id="q3a-JB-os9"/>
+                                            <outlet property="valueLabel" destination="U2i-2G-t9r" id="Eiq-EH-fmu"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GuestCell" id="NqT-g4-MEG" customClass="GuestSwitchCell" customModule="IESManager" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="139.5" width="343" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NqT-g4-MEG" id="rWH-x9-xWc">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enable Guest Network" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hC-7U-zqM">
+                                                    <rect key="frame" x="16" y="11.5" width="170" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ErZ-jP-BnZ">
+                                                    <rect key="frame" x="276" y="6.5" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="enableSwitchChanged:" destination="NqT-g4-MEG" eventType="valueChanged" id="Nev-wd-4UQ"/>
+                                                    </connections>
+                                                </switch>
+                                                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="jjR-gV-4r1">
+                                                    <rect key="frame" x="248" y="12" width="20" height="20"/>
+                                                </activityIndicatorView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="ErZ-jP-BnZ" secondAttribute="trailing" constant="18" id="6p3-3d-cSL"/>
+                                                <constraint firstItem="jjR-gV-4r1" firstAttribute="centerY" secondItem="ErZ-jP-BnZ" secondAttribute="centerY" id="C9q-Jp-o4k"/>
+                                                <constraint firstItem="ErZ-jP-BnZ" firstAttribute="leading" secondItem="jjR-gV-4r1" secondAttribute="trailing" constant="8" symbolic="YES" id="Vhj-EY-Jpd"/>
+                                                <constraint firstItem="2hC-7U-zqM" firstAttribute="leading" secondItem="rWH-x9-xWc" secondAttribute="leading" constant="16" id="rCR-2z-evL"/>
+                                                <constraint firstItem="ErZ-jP-BnZ" firstAttribute="centerY" secondItem="rWH-x9-xWc" secondAttribute="centerY" id="vHy-75-NBh"/>
+                                                <constraint firstItem="2hC-7U-zqM" firstAttribute="centerY" secondItem="rWH-x9-xWc" secondAttribute="centerY" id="yFD-ja-i8A"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="activitySpinner" destination="jjR-gV-4r1" id="4W7-OR-BOI"/>
+                                            <outlet property="enableSwitch" destination="ErZ-jP-BnZ" id="GG8-dv-Pbx"/>
+                                            <outlet property="titleLabel" destination="2hC-7U-zqM" id="Za9-Ak-ayC"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="sOw-aM-XVr" id="1wx-b9-VQN"/>
+                                    <outlet property="delegate" destination="sOw-aM-XVr" id="XG6-IV-23m"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gQo-9P-iTw" customClass="WifiGoToAdvancedSettingsView" customModule="IESManager" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="87w-TB-fgg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dzH-gz-YeA" firstAttribute="bottom" secondItem="87w-TB-fgg" secondAttribute="bottom" id="81A-1Z-FZ6"/>
+                            <constraint firstItem="gQo-9P-iTw" firstAttribute="top" secondItem="87w-TB-fgg" secondAttribute="top" id="Ab6-xb-FNa"/>
+                            <constraint firstItem="dzH-gz-YeA" firstAttribute="leading" secondItem="87w-TB-fgg" secondAttribute="leading" id="B1S-TO-17T"/>
+                            <constraint firstItem="dzH-gz-YeA" firstAttribute="trailing" secondItem="87w-TB-fgg" secondAttribute="trailing" id="IIM-V9-8qz"/>
+                            <constraint firstItem="gQo-9P-iTw" firstAttribute="leading" secondItem="87w-TB-fgg" secondAttribute="leading" id="YRn-Bg-N6N"/>
+                            <constraint firstItem="87w-TB-fgg" firstAttribute="bottom" secondItem="gQo-9P-iTw" secondAttribute="bottom" id="cbt-yj-rTF"/>
+                            <constraint firstItem="dzH-gz-YeA" firstAttribute="top" secondItem="87w-TB-fgg" secondAttribute="top" id="kZU-P2-acp"/>
+                            <constraint firstItem="87w-TB-fgg" firstAttribute="trailing" secondItem="gQo-9P-iTw" secondAttribute="trailing" id="xEZ-mr-hb6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="advanced" destination="gQo-9P-iTw" id="89w-oJ-fMb"/>
+                        <outlet property="tableView" destination="dzH-gz-YeA" id="kSV-l8-vNG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oyx-4u-x6G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1528.8" y="106.59670164917542"/>
+        </scene>
+        <!--Primary Network-->
+        <scene sceneID="eAz-Pc-8C6">
+            <objects>
+                <viewController storyboardIdentifier="HomeEditSsidPwdViewController" title="Primary Network" id="XCx-Ph-OeC" customClass="HomeEditSsidPwdViewController" customModule="IESManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OeU-kE-zU2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BaE-7d-nUJ" customClass="CurvedTextEntryField" customModule="IESManager" customModuleProvider="target">
+                                <rect key="frame" x="20" y="16" width="335" height="60"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="96e-td-FJF"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Wi-Fi name must be between 6 and 32 characters and can not contain special characters." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YSw-Xo-jox">
+                                <rect key="frame" x="20" y="92" width="335" height="31.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TQA-PY-cUd">
+                                <rect key="frame" x="20" y="139.5" width="335" height="0.5"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="0.5" id="z3s-Ob-1Zw"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZBC-Tw-S67">
+                                <rect key="frame" x="20" y="156" width="335" height="149"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Broadcast Wi-Fi Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7jD-1g-CVO">
+                                        <rect key="frame" x="0.0" y="8" width="335" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4iQ-v6-60h">
+                                        <rect key="frame" x="286" y="3" width="51" height="31"/>
+                                    </switch>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lwb-Mc-uGi">
+                                        <rect key="frame" x="0.0" y="54" width="335" height="47"/>
+                                        <string key="text">If broadcasting feature is turned off, you'll have to manually enter the Wi-Fi name on your other devices to connect to this network.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Lwb-Mc-uGi" firstAttribute="top" secondItem="4iQ-v6-60h" secondAttribute="bottom" constant="20" id="DjW-TH-y2g"/>
+                                    <constraint firstItem="7jD-1g-CVO" firstAttribute="leading" secondItem="ZBC-Tw-S67" secondAttribute="leading" id="Evf-44-ZPf"/>
+                                    <constraint firstItem="Lwb-Mc-uGi" firstAttribute="leading" secondItem="ZBC-Tw-S67" secondAttribute="leading" id="L5O-Th-RwG"/>
+                                    <constraint firstItem="7jD-1g-CVO" firstAttribute="top" secondItem="ZBC-Tw-S67" secondAttribute="top" constant="8" id="P3J-kE-lL4"/>
+                                    <constraint firstAttribute="trailing" secondItem="4iQ-v6-60h" secondAttribute="trailing" id="WhA-D7-QZy"/>
+                                    <constraint firstAttribute="trailing" secondItem="7jD-1g-CVO" secondAttribute="trailing" id="YPB-y6-01D"/>
+                                    <constraint firstAttribute="trailing" secondItem="Lwb-Mc-uGi" secondAttribute="trailing" id="avD-8b-Iix"/>
+                                    <constraint firstItem="4iQ-v6-60h" firstAttribute="centerY" secondItem="7jD-1g-CVO" secondAttribute="centerY" id="evC-uV-Jcz"/>
+                                    <constraint firstAttribute="height" constant="149" id="yV1-ma-w5g"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccn-Pt-xsM" customClass="CurvedButton" customModule="IESManager" customModuleProvider="target">
+                                <rect key="frame" x="20" y="606" width="335" height="45"/>
+                                <color key="backgroundColor" red="0.27481016520000001" green="0.49008131030000002" blue="0.8571171165" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="tIe-sK-lcs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu" pointSize="18"/>
+                                <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Done"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="Continue"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="doneTapped:" destination="XCx-Ph-OeC" eventType="touchUpInside" id="Z8f-rf-EQ2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7iI-fM-8k2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BaE-7d-nUJ" firstAttribute="leading" secondItem="7iI-fM-8k2" secondAttribute="leading" constant="20" id="11W-V6-cai"/>
+                            <constraint firstItem="ccn-Pt-xsM" firstAttribute="leading" secondItem="7iI-fM-8k2" secondAttribute="leading" constant="20" id="7y4-TS-Zfb"/>
+                            <constraint firstItem="ZBC-Tw-S67" firstAttribute="leading" secondItem="7iI-fM-8k2" secondAttribute="leading" constant="20" id="C5c-y9-96o"/>
+                            <constraint firstItem="BaE-7d-nUJ" firstAttribute="top" secondItem="7iI-fM-8k2" secondAttribute="top" constant="16" id="Eaa-48-UMG"/>
+                            <constraint firstItem="7iI-fM-8k2" firstAttribute="trailing" secondItem="ccn-Pt-xsM" secondAttribute="trailing" constant="20" id="Gfi-Dp-eS6"/>
+                            <constraint firstItem="TQA-PY-cUd" firstAttribute="leading" secondItem="7iI-fM-8k2" secondAttribute="leading" constant="20" id="MMo-13-G4e"/>
+                            <constraint firstItem="7iI-fM-8k2" firstAttribute="trailing" secondItem="YSw-Xo-jox" secondAttribute="trailing" constant="20" id="TPz-tk-vKz"/>
+                            <constraint firstItem="ZBC-Tw-S67" firstAttribute="top" secondItem="TQA-PY-cUd" secondAttribute="bottom" constant="16" id="TdL-VS-fmT"/>
+                            <constraint firstItem="7iI-fM-8k2" firstAttribute="trailing" secondItem="BaE-7d-nUJ" secondAttribute="trailing" constant="20" id="YkD-uz-ech"/>
+                            <constraint firstItem="7iI-fM-8k2" firstAttribute="trailing" secondItem="ZBC-Tw-S67" secondAttribute="trailing" constant="20" id="Zvc-Qs-iVE"/>
+                            <constraint firstItem="TQA-PY-cUd" firstAttribute="top" secondItem="YSw-Xo-jox" secondAttribute="bottom" constant="16" id="aEn-PY-6tu"/>
+                            <constraint firstItem="7iI-fM-8k2" firstAttribute="trailing" secondItem="TQA-PY-cUd" secondAttribute="trailing" constant="20" id="eAd-Zf-9Pf"/>
+                            <constraint firstItem="YSw-Xo-jox" firstAttribute="leading" secondItem="7iI-fM-8k2" secondAttribute="leading" constant="20" id="rTI-Ld-lBP"/>
+                            <constraint firstItem="ccn-Pt-xsM" firstAttribute="bottom" secondItem="7iI-fM-8k2" secondAttribute="bottom" constant="-16" id="sfU-ly-hhg"/>
+                            <constraint firstItem="YSw-Xo-jox" firstAttribute="top" secondItem="BaE-7d-nUJ" secondAttribute="bottom" constant="16" id="zvG-iw-af7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="broadcastInfoLabel" destination="Lwb-Mc-uGi" id="7jL-Sq-0An"/>
+                        <outlet property="broadcastLabel" destination="7jD-1g-CVO" id="yc6-MW-Oql"/>
+                        <outlet property="broadcastOnSwitch" destination="4iQ-v6-60h" id="O5e-QY-wtr"/>
+                        <outlet property="broadcastView" destination="ZBC-Tw-S67" id="EMQ-vM-UTf"/>
+                        <outlet property="dividerView" destination="TQA-PY-cUd" id="AoB-yc-rd9"/>
+                        <outlet property="doneButton" destination="ccn-Pt-xsM" id="ePn-nE-vLp"/>
+                        <outlet property="infoLabel" destination="YSw-Xo-jox" id="Ktz-vJ-Ita"/>
+                        <outlet property="textEntryField" destination="BaE-7d-nUJ" id="xGt-09-grs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rqz-Sk-wga" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2310" y="108"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="eye" width="28" height="22"/>
+        <image name="wifi_logo_ssid" width="21.5" height="21.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

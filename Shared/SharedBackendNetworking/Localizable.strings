@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  SharedBackendNetworking
+
+  Created by Richard Stockdale on 21/06/2022.
+  
+*/
+
+"Could not create a valid URL" = "Could not create a valid URL";
+"Widgets are only for home users" = "Widgets are only for home users";
+"Please configure" = "Please configure";
+"Log in to your account" = "Log in to your account";

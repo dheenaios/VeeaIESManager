@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lRS-KW-e5Z">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Logs-->
+        <scene sceneID="noD-Fz-uW0">
+            <objects>
+                <navigationController storyboardIdentifier="LogsNavController" title="Logs" id="lRS-KW-e5Z" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="IqT-Ld-qMA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.34901960780000002" green="0.33725490200000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="fR1-rK-A92" kind="relationship" relationship="rootViewController" id="pJa-HS-Wbd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fnb-tR-1C9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-386" y="99"/>
+        </scene>
+        <!--Logs-->
+        <scene sceneID="LU0-As-O7j">
+            <objects>
+                <viewController storyboardIdentifier="LogsViewController" id="fR1-rK-A92" customClass="LogsViewController" customModule="IESManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="r5n-f2-rCe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yBX-xs-JHW">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Mfd-xR-pTT"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="Clear Logs" id="Hlk-rA-cqS">
+                                        <color key="tintColor" red="0.34901960780000002" green="0.33725490200000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="clearLogsTapped:" destination="fR1-rK-A92" id="Psx-Yc-CQq"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="5dR-Lt-wuJ"/>
+                                </items>
+                            </toolbar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OqR-0E-QM7">
+                                <rect key="frame" x="16" y="44" width="343" height="47"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search by tag" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="Urx-WE-sqq">
+                                        <rect key="frame" x="8" y="6.5" width="273" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="tagSearchChanged:" destination="fR1-rK-A92" eventType="editingChanged" id="T3U-Bf-KCN"/>
+                                        </connections>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LhT-vV-Xf8">
+                                        <rect key="frame" x="289" y="8" width="54" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Hide"/>
+                                        <connections>
+                                            <action selector="toggleSearchBar:" destination="fR1-rK-A92" eventType="touchUpInside" id="UUO-cU-yI4"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstItem="Urx-WE-sqq" firstAttribute="leading" secondItem="OqR-0E-QM7" secondAttribute="leading" constant="8" id="4aU-C4-D0d"/>
+                                    <constraint firstAttribute="bottom" secondItem="LhT-vV-Xf8" secondAttribute="bottom" constant="8" id="NKk-jQ-EH4"/>
+                                    <constraint firstAttribute="trailing" secondItem="LhT-vV-Xf8" secondAttribute="trailing" id="Xgi-GH-dcJ"/>
+                                    <constraint firstItem="LhT-vV-Xf8" firstAttribute="leading" secondItem="Urx-WE-sqq" secondAttribute="trailing" constant="8" symbolic="YES" id="bTs-GD-ci0"/>
+                                    <constraint firstItem="Urx-WE-sqq" firstAttribute="centerY" secondItem="OqR-0E-QM7" secondAttribute="centerY" id="rc5-zf-qHG"/>
+                                    <constraint firstItem="LhT-vV-Xf8" firstAttribute="top" secondItem="OqR-0E-QM7" secondAttribute="top" constant="8" id="x2J-hy-mro"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="iEw-Q8-Ykn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yBX-xs-JHW" firstAttribute="bottom" secondItem="iEw-Q8-Ykn" secondAttribute="bottom" id="2n7-zd-kN3"/>
+                            <constraint firstItem="OqR-0E-QM7" firstAttribute="leading" secondItem="iEw-Q8-Ykn" secondAttribute="leading" constant="16" id="AhZ-Qs-27P"/>
+                            <constraint firstItem="OqR-0E-QM7" firstAttribute="top" secondItem="iEw-Q8-Ykn" secondAttribute="top" id="hZN-Jr-cnY"/>
+                            <constraint firstItem="yBX-xs-JHW" firstAttribute="leading" secondItem="iEw-Q8-Ykn" secondAttribute="leading" id="n72-N2-RBP"/>
+                            <constraint firstItem="yBX-xs-JHW" firstAttribute="trailing" secondItem="iEw-Q8-Ykn" secondAttribute="trailing" id="sxJ-mw-wbZ"/>
+                            <constraint firstItem="iEw-Q8-Ykn" firstAttribute="trailing" secondItem="OqR-0E-QM7" secondAttribute="trailing" constant="16" id="z7f-2X-wg6"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Logs" id="nnx-ZY-flh">
+                        <leftBarButtonItems>
+                            <barButtonItem style="done" systemItem="action" id="Hvg-Cw-jRT">
+                                <color key="tintColor" systemColor="tintColor"/>
+                                <connections>
+                                    <action selector="shareButtonTapped:" destination="fR1-rK-A92" id="0Ms-CH-PnG"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="search" id="wuE-XN-cZo">
+                                <connections>
+                                    <action selector="toggleSearchBar:" destination="fR1-rK-A92" id="qvV-T5-szz"/>
+                                </connections>
+                            </barButtonItem>
+                        </leftBarButtonItems>
+                        <barButtonItem key="rightBarButtonItem" title="Done" style="done" id="pOl-Zl-aec">
+                            <color key="tintColor" systemColor="tintColor"/>
+                            <connections>
+                                <action selector="doneTapped:" destination="fR1-rK-A92" id="daA-9k-ODC"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="searchBar" destination="OqR-0E-QM7" id="ZCM-bi-tdV"/>
+                        <outlet property="searchBarTextField" destination="Urx-WE-sqq" id="1Ve-yZ-Qj4"/>
+                        <outlet property="toolBar" destination="yBX-xs-JHW" id="k5R-hv-a72"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c8I-U0-lEn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="376.80000000000001" y="98.50074962518741"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

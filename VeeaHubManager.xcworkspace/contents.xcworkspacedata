@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:Shared/SharedControllers/SharedControllers.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "container:IESManager.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Shared/SharedBackendNetworking/SharedBackendNetworking.xcodeproj">
+   </FileRef>
+</Workspace>

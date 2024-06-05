@@ -1,0 +1,2007 @@
+{
+  "ConfigurationSnapShot" : {
+    "BaseModelJson" : {
+      "node_ap_status" : {
+        "ap2" : {
+          "fitted" : false,
+          "bssid" : "unknown",
+          "mac" : "unknown",
+          "opstate" : false
+        },
+        "ap_1_1" : {
+          "mac" : "d6:25:cc:b1:7f:f0",
+          "opstate" : true,
+          "timestamp" : 1635841858
+        },
+        "ap_2_1" : {
+          "mac" : "unknown",
+          "opstate" : false,
+          "timestamp" : 0
+        },
+        "ap_2_5" : {
+          "mac" : "unknown",
+          "opstate" : false,
+          "timestamp" : 0
+        },
+        "ap_1_4" : {
+          "mac" : "unknown",
+          "opstate" : false,
+          "timestamp" : 0
+        },
+        "_id" : "00000000205f144f",
+        "ap1" : {
+          "fitted" : true,
+          "bssid" : "d6:25:cc:b1:7f:f0",
+          "mac" : "d6:25:cc:b1:7f:f0",
+          "opstate" : true
+        },
+        "ap_1_6" : {
+          "mac" : "unknown",
+          "opstate" : false,
+          "timestamp" : 0
+        },
+        "_rev" : "284-wOq0OSTEOdHES4zo40LylXL0F8A=",
+        "ap_2_4" : {
+          "mac" : "unknown",
+          "opstate" : false,
+          "timestamp" : 0
+        },
+        "ap_2_6" : {
+          "mac" : "unknown",
+          "opstate" : false,
+          "timestamp" : 0
+        },
+        "ap_2_2" : {
+          "mac" : "unknown",
+          "opstate" : false,
+          "timestamp" : 0
+        },
+        "ap_1_3" : {
+          "mac" : "d6:25:cc:b1:7f:f2",
+          "opstate" : true,
+          "timestamp" : 1635841869
+        },
+        "ap_2_3" : {
+          "mac" : "unknown",
+          "opstate" : false,
+          "timestamp" : 0
+        },
+        "ap_1_2" : {
+          "mac" : "d6:25:cc:b1:7f:f1",
+          "opstate" : true,
+          "timestamp" : 1635841858
+        },
+        "ap_1_5" : {
+          "mac" : "unknown",
+          "opstate" : false,
+          "timestamp" : 0
+        }
+      },
+      "node_capabilities" : {
+        "ap" : {
+          "dfs_support" : false,
+          "single_band" : false,
+          "acs_support" : true,
+          "ssids" : 5,
+          "unii1_and_dfs_ch" : false,
+          "name" : "",
+          "mesh_radio" : false
+        },
+        "_rev" : "83-JNaXfEwrTr2d1g2Lu1akefEvsRY=",
+        "ethernet" : {
+          "name" : "0.5",
+          "ports" : 3,
+          "interfaces" : [
+            "eth0",
+            "",
+            ""
+          ]
+        },
+        "zigbee" : {
+          "name" : "Nortek Zigbee, Nortek Zwave"
+        },
+        "wifi_wan" : {
+          "name" : "",
+          "interfaces" : [
+
+          ]
+        },
+        "bluetooth" : {
+          "name" : ""
+        },
+        "_id" : "00000000205f144f",
+        "ap2" : {
+          "dfs_support" : false,
+          "multi_radio" : false,
+          "acs_support" : true,
+          "ssids" : 5,
+          "single_band" : false,
+          "unii1_and_dfs_ch" : false,
+          "name" : "",
+          "mesh_radio" : false
+        },
+        "capabilities" : [
+          "ap",
+          "bluetooth",
+          "cellular",
+          "ethernet",
+          "ethports",
+          "management",
+          "vmesh",
+          "zigbee"
+        ],
+        "ethports" : {
+          "roles" : [
+            [
+              "wan",
+              "lan"
+            ],
+            [
+              "wan",
+              "lan"
+            ],
+            [
+              "wan",
+              "lan"
+            ]
+          ],
+          "config" : [
+            "wan",
+            "lan"
+          ],
+          "role" : [
+            "wan"
+          ],
+          "wan_static_ip" : [
+            1
+          ],
+          "ports" : 3,
+          "net_roles" : [
+            [
+              "lan"
+            ],
+            [
+              "lan"
+            ],
+            [
+              "lan"
+            ]
+          ],
+          "name" : "0.5"
+        },
+        "lorawan" : {
+          "serial_number" : "",
+          "module" : "",
+          "mac" : "",
+          "hw_version" : "",
+          "sw_version" : ""
+        },
+        "features" : [
+
+        ],
+        "vmesh" : {
+          "wds_support": true,
+          "dfs_support" : false,
+          "acs_support" : false,
+          "name" : "",
+          "radio_select" : false,
+          "unii1_and_dfs_ch" : false
+        },
+        "management" : {
+          "keys_ro" : {
+            "lan_id" : [
+              "node_ap_config",
+              "mesh_ap_config",
+              "node_port_config",
+              "mesh_port_config"
+            ]
+          },
+          "tables" : [
+            "node_lan_dhcp",
+            "node_lan_status",
+            "node_port_status_persist"
+          ],
+          "keys_rw" : {
+            "mesh" : [
+              "node_port_config",
+              "mesh_port_config"
+            ],
+            "client_traffic" : [
+              "mesh_lan_config"
+            ],
+            "vmesh_local_control" : [
+              "node_config"
+            ],
+            "vmesh_locked_wired" : [
+              "node_config"
+            ]
+          }
+        },
+        "cellular" : {
+          "name" : "",
+          "interfaces" : [
+
+          ]
+        }
+      },
+      "node_wan_config" : {
+        "wan_1" : {
+          "vlan_tag" : 0,
+          "zone" : "netplus",
+          "identity" : "",
+          "use" : true,
+          "persist" : true,
+          "owner" : "00000000-BA5E-5EED-C0DE-000000000003",
+          "vlan" : 0,
+          "alias" : [
+            "wan:default"
+          ],
+          "origin" : "",
+          "interface" : "",
+          "name" : "default",
+          "port" : 1
+        },
+        "wan_3" : {
+          "vlan_tag" : 0,
+          "zone" : "",
+          "identity" : "",
+          "use" : false,
+          "persist" : true,
+          "owner" : "",
+          "vlan" : 0,
+          "alias" : [
+
+          ],
+          "origin" : "",
+          "interface" : "",
+          "name" : "",
+          "port" : 0
+        },
+        "_rev" : "1-\/xFy6Ftane5LyEoHz7Yih2Qd7No=",
+        "wan_2" : {
+          "vlan_tag" : 0,
+          "zone" : "",
+          "identity" : "",
+          "use" : false,
+          "persist" : true,
+          "owner" : "",
+          "vlan" : 0,
+          "alias" : [
+
+          ],
+          "origin" : "",
+          "interface" : "",
+          "name" : "",
+          "port" : 0
+        },
+        "wan_4" : {
+          "vlan_tag" : 0,
+          "zone" : "",
+          "identity" : "",
+          "use" : false,
+          "persist" : true,
+          "owner" : "",
+          "vlan" : 0,
+          "alias" : [
+
+          ],
+          "origin" : "",
+          "interface" : "",
+          "name" : "",
+          "port" : 0
+        },
+        "_id" : "00000000205f144f"
+      },
+      "node_config" : {
+        "access1_max_num_sta" : 128,
+        "access2_wifi_channels" : [
+          1,
+          6,
+          11,
+          36,
+          40,
+          44,
+          48
+        ],
+        "vmesh_dfs_enabled" : false,
+        "gateway_locked" : true,
+        "vmesh_power_scale" : 100,
+        "beacon_locked" : false,
+        "node_locale" : "Studio",
+        "gateway_cellular_restricted" : false,
+        "gateway_ethernet_restricted" : false,
+        "vmesh_80211ac_support" : true,
+        "media_analytics_locked" : true,
+        "gateway_cellular_locked" : false,
+        "post_interval_restricted" : 3600,
+        "access2_control_list" : "accept",
+        "access_accept_mac_list" : [
+
+        ],
+        "gateway_ethernet_locked" : false,
+        "retail_analytics_locked" : true,
+        "node_locked" : false,
+        "acs_dwell_time_5g_ms" : 500,
+        "access1_acs" : true,
+        "vmesh_psk" : "RqpqCpB9KtWh7dktH",
+        "access2_auto_select_channels" : [
+
+        ],
+        "access1_wifi_channels" : [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "access2_max_inactivity" : 300,
+        "access_control_list" : "accept",
+        "internet_access_monitoring" : false,
+        "restricted_backhaul" : false,
+        "hncp_men_mesh_address" : "10.101.0.1\/24",
+        "node_type" : "MEN",
+        "_rev" : "348-H8ZbmX333vjLNnU+\/NbtnN3e4z4=",
+        "remote_application_server" : "",
+        "node_max_load1" : 36,
+        "gateway_cellular_passphrase" : "",
+        "mas_server" : "private.qamas.veea.io",
+        "reboot_delay" : 15,
+        "post_interval_unrestricted" : 60,
+        "gateway_cellular_mcc" : "",
+        "access1_control_list" : "accept",
+        "access2_channel_actual" : 48,
+        "access_restart_trigger" : false,
+        "gateway_mdns_enable" : false,
+        "vmesh_allowed_whitelist_chans" : [
+          1,
+          6,
+          11,
+          36,
+          40,
+          44,
+          48
+        ],
+        "hncp_ext_delegated_prefix" : "10.101.0.0\/16",
+        "gateway_ssid" : "veea-gateway",
+        "access2_acs" : true,
+        "vmesh_wifi_channels" : [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          36,
+          40,
+          44,
+          48
+        ],
+        "vmesh_security" : "rsn",
+        "vmesh_rssi_threshold" : -80,
+        "backhaul_monitor_locked" : true,
+        "node_country" : "GB",
+        "vmesh_available_bandwidths" : [
+
+        ],
+        "gateway_wifi_locked" : true,
+        "vmesh_restart_trigger" : false,
+        "access1_acs_exclude_dfs" : false,
+        "gateway_wifi_restricted" : false,
+        "vmesh_radio_name" : "",
+        "beacon_encrypt_key" : "[219, 71, 165, 174, 75, 89, 7, 225, 198, 75, 153, 224]",
+        "vmesh_local_control" : "start",
+        "babel_fixed_costs" : [
+
+        ],
+        "vmesh_channel_actual" : 36,
+        "swarm_name" : "C05BCBE0C0A000002419-vmesh",
+        "access2_bandwidth_actual" : 40,
+        "access2_channel" : 48,
+        "gateway_ethernet_mtu" : 1500,
+        "wifi_analytics_locked" : false,
+        "beacon_sub_domain" : "235454281331.veeahub.veea.io",
+        "gateway_ppp_mtu" : 1492,
+        "access1_mode" : "mixed",
+        "access2_bandwidth" : 40,
+        "vmesh_radio_options" : [
+
+        ],
+        "gateway_psk" : "default-psk",
+        "vmesh_channel" : 36,
+        "access2_allowed_whitelist_chans" : [
+
+        ],
+        "gateway_power_scale" : 100,
+        "vmesh_auto_select_channels" : [
+          36,
+          40,
+          44,
+          48
+        ],
+        "debug_hostapd" : false,
+        "access1_channel" : 1,
+        "beacon_instance_id" : "235454281331",
+        "access1_power_scale" : 100,
+        "access_monitor_hostapd" : true,
+        "debug_wpa_supplicant" : false,
+        "gateway_cellular_username" : "",
+        "beacon_access_point" : "ap_1_1",
+        "swarm_locked" : false,
+        "acs_dwell_time_ms" : 500,
+        "mesh_gateway_server" : "",
+        "access2_mode" : "mixed",
+        "vmesh_locked_wired" : false,
+        "hncp_lmt_delegated_prefix" : "10.102.0.0\/16",
+        "access1_allowed_whitelist_chans" : [
+          1,
+          6,
+          11
+        ],
+        "vmesh_acs" : false,
+        "access1_bandwidth_actual" : 20,
+        "vmesh_24g_band" : false,
+        "gateway_ppp_mru" : 1492,
+        "access1_max_inactivity" : 300,
+        "node_timezone_area" : "Europe",
+        "internet_server" : "8.8.8.8",
+        "access_deny_mac_list" : [
+
+        ],
+        "node_analytics_locked" : false,
+        "error_ctrl" : "0",
+        "gateway_ppp_debug" : false,
+        "mas_server_api" : "v1",
+        "gateway_cellular_apn" : "",
+        "access2_power_scale" : 100,
+        "vmesh_gtk_rekey_period" : 600,
+        "access1_auto_select_channels" : [
+          1,
+          6,
+          11
+        ],
+        "vmesh_hidden" : false,
+        "vmesh_bandwidth" : 40,
+        "vmesh_bandwidth_actual" : 40,
+        "access2_acs_exclude_dfs" : false,
+        "vmesh_acs_exclude_dfs" : true,
+        "access1_bandwidth" : 20,
+        "_id" : "00000000205f144f",
+        "access2_band_lower" : false,
+        "gateway_cellular_mnc" : "",
+        "vmesh_ssid" : "VMESH-2419",
+        "node_timezone_region" : "London",
+        "access1_channel_actual" : 6,
+        "gateway_lock_order" : [
+          "gateway_cellular_locked",
+          "gateway_ethernet_locked",
+          "gateway_wifi_locked"
+        ],
+        "access_restart" : 0,
+        "application_server_is_remote" : true,
+        "access2_max_num_sta" : 128,
+        "node_name" : "VH-2419"
+      },
+      "node_services" : {
+        "_id" : "00000000205f144f",
+        "pimd" : {
+          "name" : "",
+          "owner" : "",
+          "aliases" : [
+            "shared:trusted"
+          ]
+        },
+        "sd_wan" : {
+          "user" : "",
+          "restrict" : false,
+          "apn" : "",
+          "lock" : false,
+          "name" : "no APN",
+          "pass" : ""
+        },
+        "_rev" : "4-pfL3q88Dgcq+sNvF5AxFO9jkC1U=",
+        "public_wifi" : {
+          "pass" : "",
+          "alias" : "shared:public",
+          "lan_id" : 0,
+          "operator" : "",
+          "ssid" : "",
+          "ip4_cidr" : "10.100.5.0\/24",
+          "name" : "Public Wi-Fi"
+        },
+        "mdns_repeater" : {
+          "name" : "",
+          "owner" : "",
+          "aliases" : [
+            "shared:trusted"
+          ]
+        },
+        "services" : [
+          "sd_wan"
+        ],
+        "guest_wifi" : {
+          "lan_id" : 0,
+          "ip4_cidr" : "10.100.2.0\/24",
+          "ssid" : "",
+          "alias" : "shared:guest",
+          "name" : "Guest Wi-Fi",
+          "pass" : ""
+        },
+        "default_lan" : {
+          "pass" : "Bangula7",
+          "alias" : "shared:trusted",
+          "lan_id" : 0,
+          "mode" : "rt",
+          "u_aps" : 2,
+          "ssid" : "2419",
+          "ports" : 4,
+          "ip4_cidr" : "10.100.1.0\/24",
+          "ip4_dns2" : "",
+          "name" : "default",
+          "ip4_dns1" : ""
+        }
+      },
+      "mesh_vlan_config" : {
+        "_id" : "00000000205f144f",
+        "vlan_3" : {
+          "use" : false,
+          "port" : 0,
+          "lan_id" : 0,
+          "locked" : false,
+          "role" : "",
+          "tag" : 0,
+          "priority" : 0,
+          "name" : ""
+        },
+        "_rev" : "1-TKVGIZUThRMwLkszrveirpSYFUY=",
+        "vlan_4" : {
+          "use" : false,
+          "port" : 0,
+          "lan_id" : 0,
+          "locked" : false,
+          "role" : "",
+          "tag" : 0,
+          "priority" : 0,
+          "name" : ""
+        },
+        "vlan_1" : {
+          "use" : false,
+          "port" : 0,
+          "lan_id" : 0,
+          "locked" : false,
+          "role" : "",
+          "tag" : 0,
+          "priority" : 0,
+          "name" : ""
+        },
+        "vlan_2" : {
+          "use" : false,
+          "port" : 0,
+          "lan_id" : 0,
+          "locked" : false,
+          "role" : "",
+          "tag" : 0,
+          "priority" : 0,
+          "name" : ""
+        }
+      },
+      "node_port_info" : {
+        "port_4" : {
+          "interface" : "",
+          "device_type" : "",
+          "mac_addr" : ""
+        },
+        "_rev" : "43-aAfEvQ7Dx\/AgRb+v9CU\/ohH4p1k=",
+        "port_1" : {
+          "interface" : "eth0_bridge",
+          "device_type" : "Onboard",
+          "mac_addr" : "d4:25:cc:b1:7f:e0"
+        },
+        "port_3" : {
+          "interface" : "",
+          "device_type" : "USB\/Eth",
+          "mac_addr" : ""
+        },
+        "port_2" : {
+          "interface" : "",
+          "device_type" : "USB\/Eth",
+          "mac_addr" : ""
+        },
+        "_id" : "00000000205f144f"
+      },
+      "mesh_lan_config" : {
+        "_rev" : "1-6I6p5MQ656u\/\/PAIWgymDLVGnxg=",
+        "_id" : "00000000205f144f",
+        "lan_1" : {
+          "use" : true,
+          "modify" : true,
+          "locked" : false,
+          "vlan_set" : [
+
+          ],
+          "owner" : "",
+          "ip4_subnet" : "10.100.1.0\/24",
+          "l2type" : "",
+          "wan_mode" : "rt",
+          "origin" : "",
+          "alias" : [
+            "shared:trusted"
+          ],
+          "mdns_rx" : true,
+          "mdns" : false,
+          "name" : "default",
+          "ap_set_1" : [
+            3,
+            4,
+            5
+          ],
+          "ap_set_2" : [
+            3
+          ],
+          "wan_id" : 1,
+          "identity" : "",
+          "persist" : true,
+          "dhcp" : true,
+          "mode_via" : "",
+          "port_set" : [
+            1,
+            2,
+            3,
+            4
+          ],
+          "client_traffic" : "open",
+          "zone" : "enterprise"
+        },
+        "lan_3" : {
+          "use" : false,
+          "modify" : true,
+          "locked" : false,
+          "vlan_set" : [
+
+          ],
+          "owner" : "",
+          "ip4_subnet" : "",
+          "l2type" : "",
+          "wan_mode" : "rt",
+          "origin" : "",
+          "alias" : [
+
+          ],
+          "mdns_rx" : false,
+          "mdns" : false,
+          "name" : "",
+          "ap_set_1" : [
+
+          ],
+          "ap_set_2" : [
+
+          ],
+          "wan_id" : 0,
+          "identity" : "",
+          "persist" : true,
+          "dhcp" : false,
+          "mode_via" : "",
+          "port_set" : [
+
+          ],
+          "client_traffic" : "open",
+          "zone" : ""
+        },
+        "lan_4" : {
+          "use" : false,
+          "modify" : true,
+          "locked" : false,
+          "vlan_set" : [
+
+          ],
+          "owner" : "",
+          "ip4_subnet" : "",
+          "l2type" : "",
+          "wan_mode" : "rt",
+          "origin" : "",
+          "alias" : [
+
+          ],
+          "mdns_rx" : false,
+          "mdns" : false,
+          "name" : "",
+          "ap_set_1" : [
+
+          ],
+          "ap_set_2" : [
+
+          ],
+          "wan_id" : 0,
+          "identity" : "",
+          "persist" : true,
+          "dhcp" : false,
+          "mode_via" : "",
+          "port_set" : [
+
+          ],
+          "client_traffic" : "open",
+          "zone" : ""
+        },
+        "all_n" : {
+          "mdns_lan_tx" : "lan_1",
+          "l2type" : "vxlan",
+          "pimd_lan" : "lan_1"
+        },
+        "lan_2" : {
+          "use" : false,
+          "modify" : true,
+          "locked" : false,
+          "vlan_set" : [
+
+          ],
+          "owner" : "",
+          "ip4_subnet" : "",
+          "l2type" : "",
+          "wan_mode" : "rt",
+          "origin" : "",
+          "alias" : [
+
+          ],
+          "mdns_rx" : false,
+          "mdns" : false,
+          "name" : "",
+          "ap_set_1" : [
+
+          ],
+          "ap_set_2" : [
+
+          ],
+          "wan_id" : 0,
+          "identity" : "",
+          "persist" : true,
+          "dhcp" : false,
+          "mode_via" : "",
+          "port_set" : [
+
+          ],
+          "client_traffic" : "open",
+          "zone" : ""
+        }
+      },
+      "mesh_ap_config" : {
+        "ap_2_6" : {
+          "use" : false,
+          "rtt" : false,
+          "locked" : true,
+          "wpa_mode" : 2,
+          "secure_mode" : 1,
+          "radius1_auth_id" : 0,
+          "hidden" : false,
+          "ssid" : "",
+          "owner" : "",
+          "ft_mdid" : "",
+          "pass" : "",
+          "origin" : "",
+          "lan_id" : 0,
+          "mdns" : false,
+          "name" : "",
+          "80211w" : 1,
+          "psk" : "",
+          "80211r" : false,
+          "system_only" : false,
+          "radius2_acct_id" : 0,
+          "identity" : "",
+          "atf_group" : "atf_1",
+          "persist" : true,
+          "radius2_auth_id" : 0,
+          "radius1_acct_id" : 0
+        },
+        "ap_2_4" : {
+          "use" : false,
+          "rtt" : false,
+          "locked" : true,
+          "wpa_mode" : 2,
+          "secure_mode" : 1,
+          "radius1_auth_id" : 0,
+          "hidden" : false,
+          "ssid" : "",
+          "owner" : "",
+          "ft_mdid" : "",
+          "pass" : "",
+          "origin" : "",
+          "lan_id" : 0,
+          "mdns" : false,
+          "name" : "",
+          "80211w" : 1,
+          "psk" : "",
+          "80211r" : false,
+          "system_only" : false,
+          "radius2_acct_id" : 0,
+          "identity" : "",
+          "atf_group" : "atf_1",
+          "persist" : true,
+          "radius2_auth_id" : 0,
+          "radius1_acct_id" : 0
+        },
+        "ap_1_4" : {
+          "use" : false,
+          "rtt" : false,
+          "locked" : true,
+          "wpa_mode" : 2,
+          "secure_mode" : 1,
+          "radius1_auth_id" : 0,
+          "hidden" : false,
+          "ssid" : "",
+          "owner" : "",
+          "ft_mdid" : "",
+          "pass" : "",
+          "origin" : "",
+          "lan_id" : 1,
+          "mdns" : false,
+          "name" : "",
+          "80211w" : 1,
+          "psk" : "",
+          "80211r" : false,
+          "system_only" : false,
+          "radius2_acct_id" : 0,
+          "identity" : "",
+          "atf_group" : "",
+          "persist" : true,
+          "radius2_auth_id" : 0,
+          "radius1_acct_id" : 0
+        },
+        "ap_2_5" : {
+          "use" : false,
+          "rtt" : false,
+          "locked" : true,
+          "wpa_mode" : 2,
+          "secure_mode" : 1,
+          "radius1_auth_id" : 0,
+          "hidden" : false,
+          "ssid" : "",
+          "owner" : "",
+          "ft_mdid" : "",
+          "pass" : "",
+          "origin" : "",
+          "lan_id" : 0,
+          "mdns" : false,
+          "name" : "",
+          "80211w" : 1,
+          "psk" : "",
+          "80211r" : false,
+          "system_only" : false,
+          "radius2_acct_id" : 0,
+          "identity" : "",
+          "atf_group" : "atf_1",
+          "persist" : true,
+          "radius2_auth_id" : 0,
+          "radius1_acct_id" : 0
+        },
+        "ap_1_5" : {
+          "use" : false,
+          "rtt" : false,
+          "locked" : true,
+          "wpa_mode" : 2,
+          "secure_mode" : 1,
+          "radius1_auth_id" : 0,
+          "hidden" : false,
+          "ssid" : "",
+          "owner" : "",
+          "ft_mdid" : "",
+          "pass" : "",
+          "origin" : "",
+          "lan_id" : 1,
+          "mdns" : false,
+          "name" : "",
+          "80211w" : 1,
+          "psk" : "",
+          "80211r" : false,
+          "system_only" : false,
+          "radius2_acct_id" : 0,
+          "identity" : "",
+          "atf_group" : "",
+          "persist" : true,
+          "radius2_auth_id" : 0,
+          "radius1_acct_id" : 0
+        },
+        "ap_2_1" : {
+          "use" : false,
+          "rtt" : false,
+          "locked" : true,
+          "wpa_mode" : 2,
+          "secure_mode" : 1,
+          "radius1_auth_id" : 0,
+          "hidden" : false,
+          "ssid" : "",
+          "owner" : "",
+          "ft_mdid" : "",
+          "pass" : "",
+          "origin" : "",
+          "lan_id" : 0,
+          "mdns" : false,
+          "name" : "",
+          "80211w" : 1,
+          "psk" : "",
+          "80211r" : false,
+          "system_only" : true,
+          "radius2_acct_id" : 0,
+          "identity" : "",
+          "atf_group" : "atf_1",
+          "persist" : true,
+          "radius2_auth_id" : 0,
+          "radius1_acct_id" : 0
+        },
+        "ap_1_3" : {
+          "use" : true,
+          "rtt" : false,
+          "locked" : false,
+          "wpa_mode" : 2,
+          "secure_mode" : 1,
+          "radius1_auth_id" : 0,
+          "hidden" : false,
+          "ssid" : "2419",
+          "owner" : "",
+          "ft_mdid" : "",
+          "pass" : "Bangula7",
+          "origin" : "",
+          "lan_id" : 1,
+          "mdns" : true,
+          "name" : "",
+          "80211w" : 1,
+          "psk" : "",
+          "80211r" : false,
+          "system_only" : false,
+          "radius2_acct_id" : 0,
+          "identity" : "",
+          "atf_group" : "",
+          "persist" : true,
+          "radius2_auth_id" : 0,
+          "radius1_acct_id" : 0
+        },
+        "_rev" : "5-MIxDC1kx25aS6SV5R364p\/dyf+4=",
+        "ap_1_1" : {
+          "use" : false,
+          "rtt" : false,
+          "locked" : true,
+          "wpa_mode" : 2,
+          "secure_mode" : 1,
+          "radius1_auth_id" : 0,
+          "hidden" : false,
+          "ssid" : "",
+          "owner" : "",
+          "ft_mdid" : "",
+          "pass" : "",
+          "origin" : "",
+          "lan_id" : 0,
+          "mdns" : false,
+          "name" : "",
+          "80211w" : 1,
+          "psk" : "",
+          "80211r" : false,
+          "system_only" : true,
+          "radius2_acct_id" : 0,
+          "identity" : "",
+          "atf_group" : "",
+          "persist" : true,
+          "radius2_auth_id" : 0,
+          "radius1_acct_id" : 0
+        },
+        "ap_1_2" : {
+          "use" : true,
+          "rtt" : false,
+          "locked" : false,
+          "wpa_mode" : 2,
+          "secure_mode" : 1,
+          "radius1_auth_id" : 0,
+          "hidden" : true,
+          "ssid" : "VeeaBootStrap",
+          "owner" : "",
+          "ft_mdid" : "",
+          "pass" : "",
+          "origin" : "",
+          "lan_id" : 0,
+          "mdns" : false,
+          "name" : "",
+          "80211w" : 1,
+          "psk" : "9e67f715b9e85eb76651a0ebced9753c232049539b7ba5c2be5778c35c117cae",
+          "80211r" : false,
+          "system_only" : true,
+          "radius2_acct_id" : 0,
+          "identity" : "",
+          "atf_group" : "",
+          "persist" : true,
+          "radius2_auth_id" : 0,
+          "radius1_acct_id" : 0
+        },
+        "ap_2_2" : {
+          "use" : true,
+          "rtt" : false,
+          "locked" : false,
+          "wpa_mode" : 2,
+          "secure_mode" : 1,
+          "radius1_auth_id" : 0,
+          "hidden" : true,
+          "ssid" : "VeeaBootStrap",
+          "owner" : "",
+          "ft_mdid" : "",
+          "pass" : "",
+          "origin" : "",
+          "lan_id" : 0,
+          "mdns" : false,
+          "name" : "",
+          "80211w" : 1,
+          "psk" : "9e67f715b9e85eb76651a0ebced9753c232049539b7ba5c2be5778c35c117cae",
+          "80211r" : false,
+          "system_only" : true,
+          "radius2_acct_id" : 0,
+          "identity" : "",
+          "atf_group" : "atf_1",
+          "persist" : true,
+          "radius2_auth_id" : 0,
+          "radius1_acct_id" : 0
+        },
+        "ap_2_3" : {
+          "use" : true,
+          "rtt" : false,
+          "locked" : false,
+          "wpa_mode" : 2,
+          "secure_mode" : 1,
+          "radius1_auth_id" : 0,
+          "hidden" : false,
+          "ssid" : "2419",
+          "owner" : "",
+          "ft_mdid" : "",
+          "pass" : "Bangula7",
+          "origin" : "",
+          "lan_id" : 1,
+          "mdns" : true,
+          "name" : "",
+          "80211w" : 1,
+          "psk" : "",
+          "80211r" : false,
+          "system_only" : false,
+          "radius2_acct_id" : 0,
+          "identity" : "",
+          "atf_group" : "atf_1",
+          "persist" : true,
+          "radius2_auth_id" : 0,
+          "radius1_acct_id" : 0
+        },
+        "_id" : "00000000205f144f",
+        "ap_1_6" : {
+          "use" : false,
+          "rtt" : false,
+          "locked" : true,
+          "wpa_mode" : 2,
+          "secure_mode" : 1,
+          "radius1_auth_id" : 0,
+          "hidden" : false,
+          "ssid" : "",
+          "owner" : "",
+          "ft_mdid" : "",
+          "pass" : "",
+          "origin" : "",
+          "lan_id" : 0,
+          "mdns" : false,
+          "name" : "",
+          "80211w" : 1,
+          "psk" : "",
+          "80211r" : false,
+          "system_only" : false,
+          "radius2_acct_id" : 0,
+          "identity" : "",
+          "atf_group" : "",
+          "persist" : true,
+          "radius2_auth_id" : 0,
+          "radius1_acct_id" : 0
+        }
+      },
+      "node_ap_config" : {
+        "_rev" : "3-YBtwYZ3eEeHvc4MtRNFneDmgLA8=",
+        "_id" : "00000000205f144f",
+        "ap_1_4" : {
+          "use" : false,
+          "rtt" : false,
+          "locked" : true,
+          "wpa_mode" : 2,
+          "secure_mode" : 1,
+          "radius1_auth_id" : 0,
+          "hidden" : false,
+          "ssid" : "",
+          "owner" : "",
+          "pass" : "",
+          "origin" : "",
+          "lan_id" : 1,
+          "mdns" : false,
+          "name" : "",
+          "80211w" : 1,
+          "psk" : "",
+          "80211r" : false,
+          "system_only" : false,
+          "radius2_acct_id" : 0,
+          "identity" : "",
+          "atf_group" : "",
+          "persist" : true,
+          "radius2_auth_id" : 0,
+          "radius1_acct_id" : 0
+        },
+        "ap_1_3" : {
+          "use" : false,
+          "rtt" : false,
+          "locked" : true,
+          "wpa_mode" : 2,
+          "secure_mode" : 1,
+          "radius1_auth_id" : 0,
+          "hidden" : false,
+          "ssid" : "",
+          "owner" : "",
+          "pass" : "",
+          "origin" : "",
+          "lan_id" : 1,
+          "mdns" : false,
+          "name" : "",
+          "80211w" : 1,
+          "psk" : "",
+          "80211r" : false,
+          "system_only" : false,
+          "radius2_acct_id" : 0,
+          "identity" : "",
+          "atf_group" : "",
+          "persist" : true,
+          "radius2_auth_id" : 0,
+          "radius1_acct_id" : 0
+        },
+        "ap_2_2" : {
+          "use" : false,
+          "rtt" : false,
+          "locked" : true,
+          "wpa_mode" : 2,
+          "secure_mode" : 1,
+          "radius1_auth_id" : 0,
+          "hidden" : false,
+          "ssid" : "",
+          "owner" : "",
+          "pass" : "",
+          "origin" : "",
+          "lan_id" : 0,
+          "mdns" : false,
+          "name" : "",
+          "80211w" : 1,
+          "psk" : "",
+          "80211r" : false,
+          "system_only" : true,
+          "radius2_acct_id" : 0,
+          "identity" : "",
+          "atf_group" : "atf_1",
+          "persist" : true,
+          "radius2_auth_id" : 0,
+          "radius1_acct_id" : 0
+        },
+        "ap_1_2" : {
+          "use" : false,
+          "rtt" : false,
+          "locked" : true,
+          "wpa_mode" : 2,
+          "secure_mode" : 1,
+          "radius1_auth_id" : 0,
+          "hidden" : false,
+          "ssid" : "",
+          "owner" : "",
+          "pass" : "",
+          "origin" : "",
+          "lan_id" : 0,
+          "mdns" : false,
+          "name" : "",
+          "80211w" : 1,
+          "psk" : "",
+          "80211r" : false,
+          "system_only" : true,
+          "radius2_acct_id" : 0,
+          "identity" : "",
+          "atf_group" : "",
+          "persist" : true,
+          "radius2_auth_id" : 0,
+          "radius1_acct_id" : 0
+        },
+        "ap_2_4" : {
+          "use" : false,
+          "rtt" : false,
+          "locked" : true,
+          "wpa_mode" : 2,
+          "secure_mode" : 1,
+          "radius1_auth_id" : 0,
+          "hidden" : false,
+          "ssid" : "",
+          "owner" : "",
+          "pass" : "",
+          "origin" : "",
+          "lan_id" : 0,
+          "mdns" : false,
+          "name" : "",
+          "80211w" : 1,
+          "psk" : "",
+          "80211r" : false,
+          "system_only" : false,
+          "radius2_acct_id" : 0,
+          "identity" : "",
+          "atf_group" : "atf_1",
+          "persist" : true,
+          "radius2_auth_id" : 0,
+          "radius1_acct_id" : 0
+        },
+        "ap_2_5" : {
+          "use" : false,
+          "rtt" : false,
+          "locked" : true,
+          "wpa_mode" : 2,
+          "secure_mode" : 1,
+          "radius1_auth_id" : 0,
+          "hidden" : false,
+          "ssid" : "",
+          "owner" : "",
+          "pass" : "",
+          "origin" : "",
+          "lan_id" : 0,
+          "mdns" : false,
+          "name" : "",
+          "80211w" : 1,
+          "psk" : "",
+          "80211r" : false,
+          "system_only" : false,
+          "radius2_acct_id" : 0,
+          "identity" : "",
+          "atf_group" : "atf_1",
+          "persist" : true,
+          "radius2_auth_id" : 0,
+          "radius1_acct_id" : 0
+        },
+        "ap_1_5" : {
+          "use" : false,
+          "rtt" : false,
+          "locked" : true,
+          "wpa_mode" : 2,
+          "secure_mode" : 1,
+          "radius1_auth_id" : 0,
+          "hidden" : false,
+          "ssid" : "",
+          "owner" : "",
+          "pass" : "",
+          "origin" : "",
+          "lan_id" : 1,
+          "mdns" : false,
+          "name" : "",
+          "80211w" : 1,
+          "psk" : "",
+          "80211r" : false,
+          "system_only" : false,
+          "radius2_acct_id" : 0,
+          "identity" : "",
+          "atf_group" : "",
+          "persist" : true,
+          "radius2_auth_id" : 0,
+          "radius1_acct_id" : 0
+        },
+        "ap_2_1" : {
+          "use" : true,
+          "rtt" : false,
+          "locked" : false,
+          "wpa_mode" : 2,
+          "secure_mode" : 1,
+          "radius1_auth_id" : 0,
+          "hidden" : true,
+          "ssid" : "C05B00002419",
+          "owner" : "",
+          "pass" : "ITWfwToaWDJY",
+          "origin" : "",
+          "lan_id" : 0,
+          "mdns" : false,
+          "name" : "",
+          "80211w" : 1,
+          "psk" : "",
+          "80211r" : false,
+          "system_only" : true,
+          "radius2_acct_id" : 0,
+          "identity" : "",
+          "atf_group" : "atf_1",
+          "persist" : true,
+          "radius2_auth_id" : 0,
+          "radius1_acct_id" : 0
+        },
+        "ap_1_1" : {
+          "use" : true,
+          "rtt" : false,
+          "locked" : false,
+          "wpa_mode" : 2,
+          "secure_mode" : 1,
+          "radius1_auth_id" : 0,
+          "hidden" : true,
+          "ssid" : "C05B00002419",
+          "owner" : "",
+          "pass" : "ITWfwToaWDJY",
+          "origin" : "",
+          "lan_id" : 0,
+          "mdns" : false,
+          "name" : "",
+          "80211w" : 1,
+          "psk" : "",
+          "80211r" : false,
+          "system_only" : true,
+          "radius2_acct_id" : 0,
+          "identity" : "",
+          "atf_group" : "",
+          "persist" : true,
+          "radius2_auth_id" : 0,
+          "radius1_acct_id" : 0
+        },
+        "ap_2_6" : {
+          "use" : false,
+          "rtt" : false,
+          "locked" : true,
+          "wpa_mode" : 2,
+          "secure_mode" : 1,
+          "radius1_auth_id" : 0,
+          "hidden" : false,
+          "ssid" : "",
+          "owner" : "",
+          "pass" : "",
+          "origin" : "",
+          "lan_id" : 0,
+          "mdns" : false,
+          "name" : "",
+          "80211w" : 1,
+          "psk" : "",
+          "80211r" : false,
+          "system_only" : false,
+          "radius2_acct_id" : 0,
+          "identity" : "",
+          "atf_group" : "atf_1",
+          "persist" : true,
+          "radius2_auth_id" : 0,
+          "radius1_acct_id" : 0
+        },
+        "ap_2_3" : {
+          "use" : false,
+          "rtt" : false,
+          "locked" : true,
+          "wpa_mode" : 2,
+          "secure_mode" : 1,
+          "radius1_auth_id" : 0,
+          "hidden" : false,
+          "ssid" : "",
+          "owner" : "",
+          "pass" : "",
+          "origin" : "",
+          "lan_id" : 1,
+          "mdns" : false,
+          "name" : "",
+          "80211w" : 1,
+          "psk" : "",
+          "80211r" : false,
+          "system_only" : false,
+          "radius2_acct_id" : 0,
+          "identity" : "",
+          "atf_group" : "atf_1",
+          "persist" : true,
+          "radius2_auth_id" : 0,
+          "radius1_acct_id" : 0
+        },
+        "ap_1_6" : {
+          "use" : false,
+          "rtt" : false,
+          "locked" : true,
+          "wpa_mode" : 2,
+          "secure_mode" : 1,
+          "radius1_auth_id" : 0,
+          "hidden" : false,
+          "ssid" : "",
+          "owner" : "",
+          "pass" : "",
+          "origin" : "",
+          "lan_id" : 0,
+          "mdns" : false,
+          "name" : "",
+          "80211w" : 1,
+          "psk" : "",
+          "80211r" : false,
+          "system_only" : false,
+          "radius2_acct_id" : 0,
+          "identity" : "",
+          "atf_group" : "",
+          "persist" : true,
+          "radius2_auth_id" : 0,
+          "radius1_acct_id" : 0
+        }
+      },
+      "node_control" : {
+        "recovery_trigger" : false,
+        "recovery_on_oam_loss_enable" : true,
+        "reboot_error_ctrl" : "0",
+        "reboot_trigger" : false,
+        "_rev" : "3-ZkyBEXPyzyo1QKb5X1I1CSngQ0Y=",
+        "reboot_reason" : "",
+        "recovery_on_oam_init_expired" : true,
+        "_id" : "00000000205f144f",
+        "recovery_on_oam_init_enable" : true,
+        "reboot_delay" : 15,
+        "logrotate_trigger" : false,
+        "reinstall_trigger" : false,
+        "recovery_on_oam_loss_period" : 72,
+        "recovery_on_oam_init_period" : 4,
+        "shutdown_trigger" : false
+      },
+      "node_status" : {
+        "clock_sync_operational" : true,
+        "network_time_operational" : true,
+        "gateway_cellular_connected_mcc" : "",
+        "ethernet_ipv4_addr" : "100.119.222.44",
+        "node_operational" : true,
+        "vmesh_operating_mode" : "wireless-start",
+        "reboot_required_reason" : "",
+        "gateway_wifi_operational" : false,
+        "border_gateway_url" : "10.101.0.1",
+        "default_lan_operational" : true,
+        "gateway_cellular_connected_mnc" : "",
+        "backhaul_operational" : true,
+        "wlan_btcoex_state" : "Unknown",
+        "vmesh_operational" : true,
+        "gateway_cellular_connected_apn" : "bicsapn",
+        "beacon_operational" : true,
+        "gateway_cellular_operational" : true,
+        "restricted_backhaul" : false,
+        "gateway_ethernet_operational" : false,
+        "_rev" : "949-vBogyEnWympUcUgEr+29h9+3auI=",
+        "internet_access_operational" : true,
+        "fpga_coex_state" : "wlan [-] bluetooth [-] Zigbee [-]",
+        "gateway_cellular_connected_passphrase" : "",
+        "gateway_cellular_connected_status" : "Connected successfully to automatically detected APN",
+        "_id" : "00000000205f144f",
+        "gateway_cellular_connected_username" : "",
+        "reboot_required" : false,
+        "access2_operational" : true,
+        "border_gateway_selected" : "Cellular",
+        "ports_operational" : false,
+        "access_operational" : true
+      },
+      "node_info" : {
+        "sw_version" : "2.22.1",
+        "product_colour" : "Black",
+        "unit_hardware_revision" : "B",
+        "product_lte_backhaul" : "Quectel EC25E",
+        "lte_firmware_version" : "EC25EFAR06A10M4G_BETA1125_01.001.01.001",
+        "recovery_time" : "2021-11-02 08:24:21",
+        "reboot_time" : "2021-11-02 08:26:26",
+        "mesh_uuid" : "17be6007-e0a3-409e-8729-74b3beee29b0",
+        "_rev" : "102-R7OD2iRfQbjd94vqbOsOQleENqU=",
+        "product_lte_access" : "None",
+        "reboot_reason" : "CPU. Shutdown",
+        "unit_serial_number" : "C05BCBE0C0A000002419",
+        "_id" : "00000000205f144f",
+        "node_name" : "C05BCBE0C0A000002419",
+        "node_time_trigger" : false,
+        "unit_hardware_version" : "0.5",
+        "node_mac" : "d4:25:cc:b1:7f:e0",
+        "shutdown_trigger" : false,
+        "bluetooth_address" : "00:15:83:F8:7B:59",
+        "lte_driver_version" : "Quectel_Linux&Android_GobiNet_Driver_V1.6.1",
+        "reinstall_time" : "2021-11-02 08:27:29",
+        "product_model" : "VHC05",
+        "product_memory" : "1\/32",
+        "node_time" : "2021-10-18 07:14:15",
+        "os_version" : "4.14.77",
+        "reboot_trigger" : false,
+        "unit_hardware_type" : "ies"
+      },
+      "node_vlan_config" : {
+        "vlan_3" : {
+          "use" : false,
+          "port" : 0,
+          "lan_id" : 0,
+          "locked" : false,
+          "role" : "",
+          "tag" : 0,
+          "priority" : 0,
+          "name" : ""
+        },
+        "vlan_2" : {
+          "use" : false,
+          "port" : 0,
+          "lan_id" : 0,
+          "locked" : false,
+          "role" : "",
+          "tag" : 0,
+          "priority" : 0,
+          "name" : ""
+        },
+        "_rev" : "1-TKVGIZUThRMwLkszrveirpSYFUY=",
+        "_id" : "00000000205f144f",
+        "vlan_4" : {
+          "use" : false,
+          "port" : 0,
+          "lan_id" : 0,
+          "locked" : false,
+          "role" : "",
+          "tag" : 0,
+          "priority" : 0,
+          "name" : ""
+        },
+        "vlan_1" : {
+          "use" : false,
+          "port" : 0,
+          "lan_id" : 0,
+          "locked" : false,
+          "role" : "",
+          "tag" : 0,
+          "priority" : 0,
+          "name" : ""
+        }
+      }
+    },
+    "SnapshotDescription" : "",
+    "OptionalModelJson" : {
+      "node_lan_status" : {
+        "lan_1" : {
+          "operational" : true,
+          "ip4_subnet" : "",
+          "reason" : ""
+        },
+        "lan_2" : {
+          "operational" : false,
+          "ip4_subnet" : "",
+          "reason" : ""
+        },
+        "_id" : "00000000205f144f",
+        "_rev" : "42-EpZ7BobrGmNEEP6IqfbrBSqkKQY=",
+        "lan_4" : {
+          "operational" : false,
+          "ip4_subnet" : "",
+          "reason" : ""
+        },
+        "lan_3" : {
+          "operational" : false,
+          "ip4_subnet" : "",
+          "reason" : ""
+        }
+      },
+      "node_port_status" : {
+        "conf_l2" : {
+          "port_3" : false,
+          "port_4" : false,
+          "port_1" : false,
+          "port_2" : false
+        },
+        "port_3" : {
+          "ipv4_addr" : "",
+          "reason" : "Adapter Not Present",
+          "is_used" : false,
+          "link_state" : "down",
+          "operational" : false
+        },
+        "_rev" : "31887-oUp1TMraG19GTH3Jai9l9IApdMg=",
+        "conf_lan" : {
+          "port_3" : 0,
+          "port_4" : 0,
+          "port_1" : 1,
+          "port_2" : 0
+        },
+        "conf_role" : {
+          "port_3" : "",
+          "port_4" : "",
+          "port_1" : "wan",
+          "port_2" : ""
+        },
+        "port_1" : {
+          "ipv4_addr" : "",
+          "reason" : "Port Not Connected",
+          "is_used" : false,
+          "link_state" : "down",
+          "operational" : false
+        },
+        "conf_state" : {
+          "port_3" : 2,
+          "port_4" : 2,
+          "port_1" : 1,
+          "port_2" : 2
+        },
+        "_id" : "00000000205f144f",
+        "port_4" : {
+          "ipv4_addr" : "",
+          "reason" : "Adapter Not Present",
+          "is_used" : false,
+          "link_state" : "down",
+          "operational" : false
+        },
+        "info_dhcp" : {
+          "lan_4" : [
+
+          ],
+          "lan_3" : [
+
+          ],
+          "lan_2" : [
+
+          ],
+          "lan_1" : [
+            "d4:25:cc:b1:7f:ff"
+          ]
+        },
+        "link_state" : {
+          "port_3" : 0,
+          "port_4" : 0,
+          "port_1" : 2,
+          "port_2" : 0
+        },
+        "port_2" : {
+          "ipv4_addr" : "",
+          "reason" : "Adapter Not Present",
+          "is_used" : false,
+          "link_state" : "down",
+          "operational" : false
+        }
+      },
+      "node_lan_static_ip" : {
+        "lan_4" : [
+
+        ],
+        "lan_1" : [
+
+        ],
+        "lan_2" : [
+
+        ],
+        "_id" : "00000000205f144f",
+        "lan_3" : [
+
+        ],
+        "_rev" : "1-KLvUB9aJ8wTSTNSJErN9eHxLSC4="
+      },
+      "cellular_data_count" : {
+        "datestamp_current_month" : "2021-10-18T00:00+0100",
+        "bytes_sent_previous" : 11852009,
+        "datestamp_previous_month" : "2021-09-20T07:31+0100",
+        "current_day" : 3,
+        "bytes_recv_previous" : 120901871,
+        "month_of_last_calculation" : 10,
+        "bytes_sent_current_day" : 11871191,
+        "datestamp_current_day" : "2021-11-03T00:00+0000",
+        "bytes_sent" : 11871191,
+        "_id" : "00000000205f144f",
+        "bytes_sent_previous_day" : 267989262,
+        "bytes_sent_previous_month" : 445569711,
+        "bytes_recv" : 120913755,
+        "billing_day" : 18,
+        "bytes_sent_current_month" : 4699855669,
+        "_rev" : "12618-PkmiaNKlxEqr\/Tr435IdYD+j5fQ=",
+        "bytes_recv_previous_day" : 755742136,
+        "lock_database" : false,
+        "unit_serial_number" : "C05BCBE0C0A000002419",
+        "bytes_recv_current_month" : 12163845288,
+        "month_next_bill_point" : 11,
+        "bytes_recv_current_day" : 120913755,
+        "datestamp_previous_day" : "2021-11-02T00:01+0000",
+        "bytes_recv_previous_month" : 3853409940
+      },
+      "mesh_radius_config" : {
+        "acct_server_3" : {
+          "secret" : "",
+          "address" : "",
+          "radius_acct_interim_interval" : 600,
+          "port" : 1813
+        },
+        "_id" : "00000000205f144f",
+        "auth_server_2" : {
+          "secret" : "",
+          "address" : "",
+          "port" : 1812
+        },
+        "radius_retry_primary_interval" : 600,
+        "_rev" : "1-QqRGrmH4fI4klrABEBVL6ksalB0=",
+        "acct_server_1" : {
+          "secret" : "",
+          "address" : "",
+          "radius_acct_interim_interval" : 600,
+          "port" : 1813
+        },
+        "auth_server_1" : {
+          "secret" : "",
+          "address" : "",
+          "port" : 1812
+        },
+        "auth_server_4" : {
+          "secret" : "",
+          "address" : "",
+          "port" : 1812
+        },
+        "acct_server_4" : {
+          "secret" : "",
+          "address" : "",
+          "radius_acct_interim_interval" : 600,
+          "port" : 1813
+        },
+        "acct_server_2" : {
+          "secret" : "",
+          "address" : "",
+          "radius_acct_interim_interval" : 600,
+          "port" : 1813
+        },
+        "auth_server_3" : {
+          "secret" : "",
+          "address" : "",
+          "port" : 1812
+        }
+      },
+      "node_wan_static_ip" : {
+        "wan_2" : {
+          "use" : false,
+          "ip4_dns_2" : "",
+          "ip4_gateway" : "",
+          "ip4_dns_1" : "",
+          "ip4_address" : ""
+        },
+        "wan_4" : {
+          "use" : false,
+          "ip4_dns_2" : "",
+          "ip4_gateway" : "",
+          "ip4_dns_1" : "",
+          "ip4_address" : ""
+        },
+        "_rev" : "1-zDmN8MbAmTS3UgmcqVUn0vABEBk=",
+        "_id" : "00000000205f144f",
+        "wan_1" : {
+          "use" : false,
+          "ip4_dns_2" : "",
+          "ip4_gateway" : "",
+          "ip4_dns_1" : "",
+          "ip4_address" : ""
+        },
+        "wan_3" : {
+          "use" : false,
+          "ip4_dns_2" : "",
+          "ip4_gateway" : "",
+          "ip4_dns_1" : "",
+          "ip4_address" : ""
+        }
+      },
+      "mesh_port_config" : {
+        "_id" : "00000000205f144f",
+        "port_4" : {
+          "use" : true,
+          "lan_id" : 1,
+          "locked" : false,
+          "role" : "lan",
+          "system_only" : false,
+          "mesh" : false,
+          "reset_trigger" : false,
+          "mdns" : true,
+          "name" : "default"
+        },
+        "_rev" : "2-iIoebJ4RynRlTm\/n5\/Kl5WirT38=",
+        "port_1" : {
+          "use" : true,
+          "lan_id" : 1,
+          "locked" : false,
+          "role" : "lan",
+          "system_only" : false,
+          "mesh" : false,
+          "reset_trigger" : false,
+          "mdns" : true,
+          "name" : "default"
+        },
+        "port_2" : {
+          "use" : true,
+          "lan_id" : 1,
+          "locked" : false,
+          "role" : "lan",
+          "system_only" : false,
+          "mesh" : false,
+          "reset_trigger" : false,
+          "mdns" : true,
+          "name" : "default"
+        },
+        "port_3" : {
+          "use" : true,
+          "lan_id" : 1,
+          "locked" : false,
+          "role" : "lan",
+          "system_only" : false,
+          "mesh" : false,
+          "reset_trigger" : false,
+          "mdns" : true,
+          "name" : "default"
+        }
+      },
+      "node_sdwan" : {
+        "backhauls" : {
+          "Cellular" : {
+            "reenable_timeout" : 30,
+            "alive" : true,
+            "backhaul_state" : 1,
+            "last_successful_test" : 0,
+            "last_test_result" : true,
+            "last_unsuccessful_test" : 0,
+            "last_state_change" : 1635935103,
+            "priority" : 1,
+            "restricted" : false,
+            "disable_timeout" : 30,
+            "locked" : false,
+            "is_ppp" : false,
+            "link_up" : true,
+            "interface" : "wwan0_bridge",
+            "last_selected" : 1635886296,
+            "test" : {
+              "remote" : "8.8.8.8",
+              "interval" : 10,
+              "method" : "PING",
+              "test_inactive" : true,
+              "timeout" : 2
+            },
+            "ip_address" : "100.119.222.44",
+            "last_test_time" : 0
+          },
+          "WiFi" : {
+            "reenable_timeout" : 30,
+            "alive" : false,
+            "backhaul_state" : 3,
+            "last_successful_test" : 0,
+            "last_test_result" : false,
+            "last_unsuccessful_test" : 0,
+            "last_state_change" : 1616064829,
+            "priority" : 3,
+            "restricted" : false,
+            "disable_timeout" : 30,
+            "locked" : true,
+            "is_ppp" : false,
+            "link_up" : false,
+            "interface" : "wlan0",
+            "last_selected" : 0,
+            "test" : {
+              "remote" : "8.8.8.8",
+              "interval" : 10,
+              "method" : "PING",
+              "test_inactive" : true,
+              "timeout" : 2
+            },
+            "ip_address" : "",
+            "last_test_time" : 0
+          },
+          "Ethernet" : {
+            "reenable_timeout" : 30,
+            "alive" : false,
+            "backhaul_state" : 3,
+            "last_successful_test" : 0,
+            "last_test_result" : false,
+            "last_unsuccessful_test" : 0,
+            "last_state_change" : 1632226332,
+            "priority" : 2,
+            "restricted" : false,
+            "disable_timeout" : 10,
+            "locked" : false,
+            "is_ppp" : false,
+            "link_up" : true,
+            "interface" : "eth0_bridge",
+            "last_selected" : 1630955951,
+            "test" : {
+              "remote" : "8.8.8.8",
+              "interval" : 5,
+              "method" : "PING",
+              "test_inactive" : true,
+              "timeout" : 2
+            },
+            "ip_address" : "",
+            "last_test_time" : 0
+          }
+        },
+        "timestamps_update_trigger" : false,
+        "_rev" : "3199-+IqYtkGUv3lfv\/ksBffuy7rgmyU=",
+        "bounce_interval" : 0,
+        "_id" : "00000000205f144f",
+        "card_update_interval" : 0,
+        "selected_backhaul" : "Cellular",
+        "bounce_interfaces" : [
+
+        ]
+      },
+      "node_port_config" : {
+        "_rev" : "2-zKpU2T1z8RnsfBcLH9HVd779etM=",
+        "port_2" : {
+          "use" : false,
+          "lan_id" : 1,
+          "locked" : true,
+          "role" : "",
+          "system_only" : false,
+          "mesh" : false,
+          "reset_trigger" : false,
+          "mdns" : false,
+          "name" : ""
+        },
+        "_id" : "00000000205f144f",
+        "port_3" : {
+          "use" : false,
+          "lan_id" : 1,
+          "locked" : true,
+          "role" : "",
+          "system_only" : false,
+          "mesh" : false,
+          "reset_trigger" : false,
+          "mdns" : false,
+          "name" : ""
+        },
+        "port_4" : {
+          "use" : false,
+          "lan_id" : 1,
+          "locked" : true,
+          "role" : "",
+          "system_only" : false,
+          "mesh" : false,
+          "reset_trigger" : false,
+          "mdns" : false,
+          "name" : ""
+        },
+        "port_1" : {
+          "use" : true,
+          "lan_id" : 1,
+          "locked" : false,
+          "role" : "wan",
+          "system_only" : false,
+          "mesh" : false,
+          "reset_trigger" : false,
+          "mdns" : false,
+          "name" : ""
+        }
+      },
+      "node_lan_dhcp" : {
+        "lan_3" : {
+          "dns_1" : "",
+          "end_ip" : "",
+          "filter_mac" : [
+
+          ],
+          "lease_time" : 0,
+          "dns_2" : "",
+          "start_ip" : "",
+          "allow_mac" : false
+        },
+        "_rev" : "1-T67DZCA1a7TZv0sqBhABdi67e20=",
+        "lan_2" : {
+          "dns_1" : "",
+          "end_ip" : "",
+          "filter_mac" : [
+
+          ],
+          "lease_time" : 0,
+          "dns_2" : "",
+          "start_ip" : "",
+          "allow_mac" : false
+        },
+        "_id" : "00000000205f144f",
+        "lan_1" : {
+          "dns_1" : "",
+          "end_ip" : "",
+          "filter_mac" : [
+
+          ],
+          "lease_time" : 60,
+          "dns_2" : "",
+          "start_ip" : "",
+          "allow_mac" : false
+        },
+        "lan_4" : {
+          "dns_1" : "",
+          "end_ip" : "",
+          "filter_mac" : [
+
+          ],
+          "lease_time" : 0,
+          "dns_2" : "",
+          "start_ip" : "",
+          "allow_mac" : false
+        }
+      }
+    },
+    "CreationDate" : "2021-11-03T11:39:52.018"
+  }
+}

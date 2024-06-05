@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-R.ttf">
+            <string>Ubuntu</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Node Config View Controller-->
+        <scene sceneID="F1R-Iv-VI7">
+            <objects>
+                <tableViewController storyboardIdentifier="NodeConfigViewController" id="uyV-o4-D8R" customClass="NodeConfigViewController" customModule="IESManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="S8Z-6r-LFu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="pj3-v0-Zn2" customClass="InlineHelpView" customModule="IESManager" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="91"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                        <view key="tableFooterView" contentMode="scaleToFill" id="585-xc-WFu">
+                            <rect key="frame" x="0.0" y="944" width="414" height="99"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                        <sections>
+                            <tableViewSection id="M7e-YM-vOC">
+                                <cells/>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Time and Location" footerTitle="Pull to refresh" id="CXo-kA-KcW">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NodeTypeCell" textLabel="BBR-fv-maa" detailTextLabel="0Lo-X6-SOS" style="IBUITableViewCellStyleValue1" id="S8c-9k-w16">
+                                        <rect key="frame" x="0.0" y="172.5" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="S8c-9k-w16" id="AWc-Ao-C26">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Hub Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BBR-fv-maa">
+                                                    <rect key="frame" x="20" y="13" width="74" height="19.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0Lo-X6-SOS">
+                                                    <rect key="frame" x="353" y="15" width="41" height="17"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="15"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" name="Background Color"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NodeTypeCell" textLabel="ui1-aq-DJJ" detailTextLabel="SEo-7A-PRX" style="IBUITableViewCellStyleValue1" id="EUa-Kp-3t0">
+                                        <rect key="frame" x="0.0" y="216.5" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EUa-Kp-3t0" id="LsV-zG-QKI">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Hub Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ui1-aq-DJJ">
+                                                    <rect key="frame" x="20" y="13" width="102.5" height="19.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SEo-7A-PRX">
+                                                    <rect key="frame" x="353" y="15" width="41" height="17"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="15"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" name="Background Color"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Settings" footerTitle="" id="y3x-XL-0SX">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LocaleCell" rowHeight="90" id="7ob-YW-6EM">
+                                        <rect key="frame" x="0.0" y="336" width="414" height="90"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7ob-YW-6EM" id="g2X-Bn-2Hz">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lJ8-s1-ckR" customClass="TitledTextField" customModule="IESManager" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Position (e.g. 1st floor)"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="lJ8-s1-ckR" secondAttribute="trailing" id="DdD-ae-h1h"/>
+                                                <constraint firstItem="lJ8-s1-ckR" firstAttribute="leading" secondItem="g2X-Bn-2Hz" secondAttribute="leading" id="TOy-Mq-M4z"/>
+                                                <constraint firstItem="lJ8-s1-ckR" firstAttribute="top" secondItem="g2X-Bn-2Hz" secondAttribute="top" id="WNn-YO-8iF"/>
+                                                <constraint firstAttribute="bottom" secondItem="lJ8-s1-ckR" secondAttribute="bottom" id="vOR-vP-u2E"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NodeTypeCell" textLabel="Uwm-Df-ZSb" detailTextLabel="Vul-sA-WIV" style="IBUITableViewCellStyleValue1" id="FHr-Df-RXw">
+                                        <rect key="frame" x="0.0" y="426" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FHr-Df-RXw" id="mqY-iH-uoe">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Node type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Uwm-Df-ZSb">
+                                                    <rect key="frame" x="20" y="13" width="81" height="19.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Vul-sA-WIV">
+                                                    <rect key="frame" x="353" y="15" width="41" height="17"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="15"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" name="Background Color"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Information" id="8Yk-Nz-Hhy">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SWVersionCell" id="udF-Y1-Ljv">
+                                        <rect key="frame" x="0.0" y="530" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="udF-Y1-Ljv" id="pMl-g0-i4m">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Software version" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c00-MZ-GYa">
+                                                    <rect key="frame" x="20" y="12.5" width="131" height="19.5"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lIK-6E-l33">
+                                                    <rect key="frame" x="356" y="13.5" width="38" height="17"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="15"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" name="Background Color"/>
+                                            <constraints>
+                                                <constraint firstItem="c00-MZ-GYa" firstAttribute="leading" secondItem="pMl-g0-i4m" secondAttribute="leadingMargin" id="2Pu-Ex-fiG"/>
+                                                <constraint firstItem="c00-MZ-GYa" firstAttribute="centerY" secondItem="pMl-g0-i4m" secondAttribute="centerY" id="Gxa-C5-8qj"/>
+                                                <constraint firstItem="lIK-6E-l33" firstAttribute="centerY" secondItem="pMl-g0-i4m" secondAttribute="centerY" id="VWc-YU-l1a"/>
+                                                <constraint firstItem="lIK-6E-l33" firstAttribute="trailing" secondItem="pMl-g0-i4m" secondAttribute="trailingMargin" id="pwd-NW-w5o"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SWVersionCell" id="c1m-ME-zM7">
+                                        <rect key="frame" x="0.0" y="574" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="c1m-ME-zM7" id="s7j-cm-JXJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OS version" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fZj-JG-Ra6">
+                                                    <rect key="frame" x="20" y="12.5" width="83" height="19.5"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vOA-DA-SBd">
+                                                    <rect key="frame" x="356" y="13.5" width="38" height="17"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="15"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" name="Background Color"/>
+                                            <constraints>
+                                                <constraint firstItem="fZj-JG-Ra6" firstAttribute="centerY" secondItem="s7j-cm-JXJ" secondAttribute="centerY" id="8Gt-9W-JwD"/>
+                                                <constraint firstItem="vOA-DA-SBd" firstAttribute="trailing" secondItem="s7j-cm-JXJ" secondAttribute="trailingMargin" id="9o1-NJ-qDb"/>
+                                                <constraint firstItem="fZj-JG-Ra6" firstAttribute="leading" secondItem="s7j-cm-JXJ" secondAttribute="leadingMargin" id="Tp8-GL-mb6"/>
+                                                <constraint firstItem="vOA-DA-SBd" firstAttribute="centerY" secondItem="s7j-cm-JXJ" secondAttribute="centerY" id="Vpl-Em-lZR"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SWVersionCell" id="muS-CT-FOj">
+                                        <rect key="frame" x="0.0" y="618" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="muS-CT-FOj" id="Wx6-Yw-Ydm">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restarted" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SDP-kl-UuZ">
+                                                    <rect key="frame" x="20" y="12.5" width="76.5" height="19.5"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YZj-2A-nHR">
+                                                    <rect key="frame" x="356" y="13.5" width="38" height="17"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="15"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" name="Background Color"/>
+                                            <constraints>
+                                                <constraint firstItem="YZj-2A-nHR" firstAttribute="centerY" secondItem="Wx6-Yw-Ydm" secondAttribute="centerY" id="OFU-FU-oDE"/>
+                                                <constraint firstItem="SDP-kl-UuZ" firstAttribute="leading" secondItem="Wx6-Yw-Ydm" secondAttribute="leadingMargin" id="QRK-HW-7ol"/>
+                                                <constraint firstItem="YZj-2A-nHR" firstAttribute="trailing" secondItem="Wx6-Yw-Ydm" secondAttribute="trailingMargin" id="aKx-78-4tb"/>
+                                                <constraint firstItem="SDP-kl-UuZ" firstAttribute="centerY" secondItem="Wx6-Yw-Ydm" secondAttribute="centerY" id="k5G-Qc-cld"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SWVersionCell" id="P1a-3m-ivk">
+                                        <rect key="frame" x="0.0" y="662" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="P1a-3m-ivk" id="wgx-cB-Eb4">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Last Restart Reason" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pLq-cO-QFK">
+                                                    <rect key="frame" x="20" y="11.5" width="153.5" height="21"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="qlM-fO-80l">
+                                                    <rect key="frame" x="181.5" y="11.5" width="212.5" height="21"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="15"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" name="Background Color"/>
+                                            <constraints>
+                                                <constraint firstItem="qlM-fO-80l" firstAttribute="top" secondItem="wgx-cB-Eb4" secondAttribute="topMargin" constant="0.5" id="12p-fL-qbm"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="qlM-fO-80l" secondAttribute="bottom" constant="0.5" id="5yq-4i-9s5"/>
+                                                <constraint firstItem="pLq-cO-QFK" firstAttribute="top" secondItem="wgx-cB-Eb4" secondAttribute="topMargin" constant="0.5" id="BXs-4m-bbs"/>
+                                                <constraint firstItem="qlM-fO-80l" firstAttribute="leading" secondItem="pLq-cO-QFK" secondAttribute="trailing" constant="8" id="KJi-oG-XUA"/>
+                                                <constraint firstItem="qlM-fO-80l" firstAttribute="trailing" secondItem="wgx-cB-Eb4" secondAttribute="trailingMargin" id="Kx5-NF-gSh"/>
+                                                <constraint firstItem="pLq-cO-QFK" firstAttribute="leading" secondItem="wgx-cB-Eb4" secondAttribute="leadingMargin" id="ZAI-da-ucN"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="pLq-cO-QFK" secondAttribute="bottom" constant="0.5" id="vwo-rn-csz"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SWVersionCell" id="wbc-QL-aG8">
+                                        <rect key="frame" x="0.0" y="706" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wbc-QL-aG8" id="ZOW-9w-TJ8">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restart Required" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pbJ-2z-Pjb">
+                                                    <rect key="frame" x="20" y="12.5" width="131.5" height="19.5"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J7V-Wa-TJC">
+                                                    <rect key="frame" x="356" y="13.5" width="38" height="17"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="15"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" name="Background Color"/>
+                                            <constraints>
+                                                <constraint firstItem="J7V-Wa-TJC" firstAttribute="centerY" secondItem="ZOW-9w-TJ8" secondAttribute="centerY" id="1dx-WM-8gf"/>
+                                                <constraint firstItem="pbJ-2z-Pjb" firstAttribute="leading" secondItem="ZOW-9w-TJ8" secondAttribute="leadingMargin" id="MGF-2h-5qg"/>
+                                                <constraint firstItem="J7V-Wa-TJC" firstAttribute="trailing" secondItem="ZOW-9w-TJ8" secondAttribute="trailingMargin" id="lf8-Tr-tay"/>
+                                                <constraint firstItem="pbJ-2z-Pjb" firstAttribute="centerY" secondItem="ZOW-9w-TJ8" secondAttribute="centerY" id="tbQ-fK-j9H"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SWVersionCell" id="cI9-gS-aUc">
+                                        <rect key="frame" x="0.0" y="750" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cI9-gS-aUc" id="Ezv-bH-8XC">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hardware version" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XMU-3H-8DP">
+                                                    <rect key="frame" x="20" y="12.5" width="136" height="19.5"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wKd-WA-y0d">
+                                                    <rect key="frame" x="356" y="13.5" width="38" height="17"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="15"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" name="Background Color"/>
+                                            <constraints>
+                                                <constraint firstItem="XMU-3H-8DP" firstAttribute="leading" secondItem="Ezv-bH-8XC" secondAttribute="leadingMargin" id="Dzg-V9-onc"/>
+                                                <constraint firstItem="XMU-3H-8DP" firstAttribute="centerY" secondItem="Ezv-bH-8XC" secondAttribute="centerY" id="Kg5-qc-I1n"/>
+                                                <constraint firstItem="wKd-WA-y0d" firstAttribute="trailing" secondItem="Ezv-bH-8XC" secondAttribute="trailingMargin" id="SHF-TK-ywF"/>
+                                                <constraint firstItem="wKd-WA-y0d" firstAttribute="centerY" secondItem="Ezv-bH-8XC" secondAttribute="centerY" id="ZiZ-jW-1M4"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SWVersionCell" id="fyU-Lh-2J7">
+                                        <rect key="frame" x="0.0" y="794" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fyU-Lh-2J7" id="DBI-5d-dmX">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hardware revision" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c3d-q5-yhd">
+                                                    <rect key="frame" x="20" y="12.5" width="140.5" height="19.5"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uNq-Ds-iPz">
+                                                    <rect key="frame" x="356" y="13.5" width="38" height="17"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="15"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" name="Background Color"/>
+                                            <constraints>
+                                                <constraint firstItem="c3d-q5-yhd" firstAttribute="leading" secondItem="DBI-5d-dmX" secondAttribute="leadingMargin" id="8qJ-sd-9m9"/>
+                                                <constraint firstItem="uNq-Ds-iPz" firstAttribute="trailing" secondItem="DBI-5d-dmX" secondAttribute="trailingMargin" id="mra-lq-24P"/>
+                                                <constraint firstItem="uNq-Ds-iPz" firstAttribute="centerY" secondItem="DBI-5d-dmX" secondAttribute="centerY" id="uzo-qV-gZ8"/>
+                                                <constraint firstItem="c3d-q5-yhd" firstAttribute="centerY" secondItem="DBI-5d-dmX" secondAttribute="centerY" id="wHQ-n0-qJX"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SWVersionCell" id="Zin-M5-UF3">
+                                        <rect key="frame" x="0.0" y="838" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zin-M5-UF3" id="C41-MP-S85">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unit ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aT4-6m-qYr">
+                                                    <rect key="frame" x="20" y="12.5" width="53.5" height="19.5"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Value" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="1dR-yV-Bd2">
+                                                    <rect key="frame" x="92.5" y="13.5" width="301.5" height="17"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="15"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" name="Background Color"/>
+                                            <constraints>
+                                                <constraint firstItem="1dR-yV-Bd2" firstAttribute="centerY" secondItem="C41-MP-S85" secondAttribute="centerY" id="ewU-Y6-oAh"/>
+                                                <constraint firstItem="1dR-yV-Bd2" firstAttribute="leading" secondItem="aT4-6m-qYr" secondAttribute="trailing" constant="19" id="fEi-a3-N5W"/>
+                                                <constraint firstItem="aT4-6m-qYr" firstAttribute="centerY" secondItem="C41-MP-S85" secondAttribute="centerY" id="hYb-2q-Nz8"/>
+                                                <constraint firstItem="1dR-yV-Bd2" firstAttribute="trailing" secondItem="C41-MP-S85" secondAttribute="trailingMargin" id="hhh-0G-ZTr"/>
+                                                <constraint firstItem="aT4-6m-qYr" firstAttribute="leading" secondItem="C41-MP-S85" secondAttribute="leadingMargin" id="kjk-9d-xWT"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SWVersionCell" id="SCi-u1-nFp">
+                                        <rect key="frame" x="0.0" y="882" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SCi-u1-nFp" id="gGD-5k-hO1">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Serial Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H3N-H6-dcW">
+                                                    <rect key="frame" x="20" y="12.5" width="110" height="19.5"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Value" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="DrC-Gg-wWa">
+                                                    <rect key="frame" x="149" y="13.5" width="245" height="17"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="15"/>
+                                                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" name="Background Color"/>
+                                            <constraints>
+                                                <constraint firstItem="DrC-Gg-wWa" firstAttribute="centerY" secondItem="gGD-5k-hO1" secondAttribute="centerY" id="goB-Pu-5g9"/>
+                                                <constraint firstItem="DrC-Gg-wWa" firstAttribute="leading" secondItem="H3N-H6-dcW" secondAttribute="trailing" constant="19" id="hJk-sY-VF9"/>
+                                                <constraint firstItem="H3N-H6-dcW" firstAttribute="leading" secondItem="gGD-5k-hO1" secondAttribute="leadingMargin" id="hp6-0J-KSF"/>
+                                                <constraint firstItem="H3N-H6-dcW" firstAttribute="centerY" secondItem="gGD-5k-hO1" secondAttribute="centerY" id="loE-4o-RiT"/>
+                                                <constraint firstItem="DrC-Gg-wWa" firstAttribute="trailing" secondItem="gGD-5k-hO1" secondAttribute="trailingMargin" id="uh8-sN-fXe"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="uyV-o4-D8R" id="7Zi-Wp-gDT"/>
+                            <outlet property="delegate" destination="uyV-o4-D8R" id="r48-kt-T0z"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="3dN-G9-NCU">
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" title="Apply" style="done" id="2qT-Oy-Kld">
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="done:" destination="uyV-o4-D8R" id="wpA-l0-xPD"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <size key="freeformSize" width="414" height="1500"/>
+                    <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="VSc-pW-PhX">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </refreshControl>
+                    <connections>
+                        <outlet property="hubLocationCell" destination="EUa-Kp-3t0" id="hAy-Ro-fAf"/>
+                        <outlet property="inlineHelpView" destination="pj3-v0-Zn2" id="wLN-QB-WiZ"/>
+                        <outlet property="lastRestartReason" destination="qlM-fO-80l" id="j3e-zJ-06S"/>
+                        <outlet property="localeLabel" destination="lJ8-s1-ckR" id="Jta-2O-68E"/>
+                        <outlet property="nodeTypeLabel" destination="Vul-sA-WIV" id="CSY-lx-QCq"/>
+                        <outlet property="osVersion" destination="vOA-DA-SBd" id="2WQ-Tl-TnF"/>
+                        <outlet property="restartRequiredLabel" destination="J7V-Wa-TJC" id="06W-h0-okm"/>
+                        <outlet property="restartTime" destination="YZj-2A-nHR" id="smw-gd-RA2"/>
+                        <outlet property="serialNumber" destination="DrC-Gg-wWa" id="1cA-y2-gSQ"/>
+                        <outlet property="swVersion" destination="lIK-6E-l33" id="2Mn-O4-IyS"/>
+                        <outlet property="timeCell" destination="S8c-9k-w16" id="1rY-3L-gD4"/>
+                        <outlet property="unitHardwareRevision" destination="uNq-Ds-iPz" id="iFG-cK-or4"/>
+                        <outlet property="unitHardwareVersion" destination="wKd-WA-y0d" id="OC0-Fo-DEV"/>
+                        <outlet property="unitID" destination="1dR-yV-Bd2" id="6FU-pF-EQ3"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GdV-ih-wYf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6136.2318840579719" y="2850.6696428571427"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bbi-KJ-JKT">
+            <objects>
+                <navigationController storyboardIdentifier="rootNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="kPV-69-U2v" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="P9S-Fo-glb">
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="uyV-o4-D8R" kind="relationship" relationship="rootViewController" id="iFL-Uv-0fZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lSV-m1-MZd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5226.0869565217399" y="2850.6696428571427"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="Background Color">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

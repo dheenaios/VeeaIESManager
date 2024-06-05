@@ -1,0 +1,57 @@
+[
+  {
+    "title": "Wi-Fi Settings",
+    "destinationId": "WiFiSettings",
+    "pageTitle": "Wi-Fi Settings",
+    "imageName": "home_dash_WiFi",
+    "requiresHubData": true,
+    "faded": false
+  },
+  {
+    "title": "Manage VeeaHubs",
+    "destinationId": "ManageVeeaHubs",
+    "pageTitle": "Manage VeeaHubs",
+    "imageName": "home_dash_Manage_VeeaHubs",
+    "requiresHubData": false,
+    "faded": false
+  },
+  {
+    "title": "Cellular Data Usage",
+    "destinationId": "CellularUsage",
+    "pageTitle": "Cellular Data Usage",
+    "imageName": "home_dash_Cellular_Data_Usage",
+    "requiresHubData": true,
+    "faded": false
+  },
+  {
+    "title": "Security Settings",
+    "destinationId": "SecuritySettings",
+    "pageTitle": "Security Settings",
+    "imageName": "home_dash_Security",
+    "requiresHubData": true,
+    "faded": false
+  },
+  {
+    "title": "My Account",
+    "pageTitle": "My Account",
+    "destinationId": "MyAccount",
+    "imageName": "home_dash_Account",
+    "requiresHubData": false,
+    "faded": false
+  },
+  {
+    "title": "Support",
+    "pageTitle": "Support",
+    "destinationId": "Support",
+    "imageName": "home_dash_Support",
+    "requiresHubData": false,
+    "faded": false
+  }
+]
+
+
+
+
+
+
+

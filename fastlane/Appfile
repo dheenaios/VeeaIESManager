@@ -1,0 +1,8 @@
+app_identifier("com.veea.iesmanager") # The bundle identifier of your app
+apple_id("deploy@veea.co") # Your Apple email address
+
+itc_team_id("117121563") # App Store Connect Team ID
+team_id("9SQVV53FAV") # Developer Portal Team ID
+
+# For more information about the Appfile, see:
+#     https://docs.fastlane.tools/advanced/#appfile

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="fastlane.lanes">
+    
+    
+    
+      
+      <testcase classname="fastlane.lanes" name="00: default_platform" time="0.000392">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="01: git_branch" time="0.00701">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="02: last_git_commit" time="0.05997">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="03: last_git_tag" time="0.023308">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="04: changelog_from_git_commits" time="0.031415">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="05: bundle_install" time="0.452476">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="06: install_provisioning_profile" time="0.086441">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="07: get_version_number" time="0.202138">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="08: increment_build_number" time="2.389521">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="09: automatic_code_signing" time="0.228883">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="10: build_app" time="359.714844">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="11: automatic_code_signing" time="0.225773">
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="12: upload_to_testflight" time="0.950356">
+        
+          <failure message="/Users/rajatchatterjee/.rvm/gems/ruby-2.5.1/gems/fastlane-2.197.0/fastlane/lib/fastlane/actions/actions_helper.rb:67:in `execute_action'&#10;/Users/rajatchatterjee/.rvm/gems/ruby-2.5.1/gems/fastlane-2.197.0/fastlane/lib/fastlane/runner.rb:255:in `block in execute_action'&#10;/Users/rajatchatterjee/.rvm/gems/ruby-2.5.1/gems/fastlane-2.197.0/fastlane/lib/fastlane/runner.rb:229:in `chdir'&#10;/Users/rajatchatterjee/.rvm/gems/ruby-2.5.1/gems/fastlane-2.197.0/fastlane/lib/fastlane/runner.rb:229:in `execute_action'&#10;/Users/rajatchatterjee/.rvm/gems/ruby-2.5.1/gems/fastlane-2.197.0/fastlane/lib/fastlane/runner.rb:157:in `trigger_action_by_name'&#10;/Users/rajatchatterjee/.rvm/gems/ruby-2.5.1/gems/fastlane-2.197.0/fastlane/lib/fastlane/fast_file.rb:159:in `method_missing'&#10;Fastfile:114:in `block (2 levels) in parsing_binding'&#10;/Users/rajatchatterjee/.rvm/gems/ruby-2.5.1/gems/fastlane-2.197.0/fastlane/lib/fastlane/lane.rb:33:in `call'&#10;/Users/rajatchatterjee/.rvm/gems/ruby-2.5.1/gems/fastlane-2.197.0/fastlane/lib/fastlane/runner.rb:49:in `block in execute'&#10;/Users/rajatchatterjee/.rvm/gems/ruby-2.5.1/gems/fastlane-2.197.0/fastlane/lib/fastlane/runner.rb:45:in `chdir'&#10;/Users/rajatchatterjee/.rvm/gems/ruby-2.5.1/gems/fastlane-2.197.0/fastlane/lib/fastlane/runner.rb:45:in `execute'&#10;/Users/rajatchatterjee/.rvm/gems/ruby-2.5.1/gems/fastlane-2.197.0/fastlane/lib/fastlane/lane_manager.rb:47:in `cruise_lane'&#10;/Users/rajatchatterjee/.rvm/gems/ruby-2.5.1/gems/fastlane-2.197.0/fastlane/lib/fastlane/command_line_handler.rb:36:in `handle'&#10;/Users/rajatchatterjee/.rvm/gems/ruby-2.5.1/gems/fastlane-2.197.0/fastlane/lib/fastlane/commands_generator.rb:109:in `block (2 levels) in run'&#10;/Users/rajatchatterjee/.rvm/gems/ruby-2.5.1/gems/commander-4.6.0/lib/commander/command.rb:187:in `call'&#10;/Users/rajatchatterjee/.rvm/gems/ruby-2.5.1/gems/commander-4.6.0/lib/commander/command.rb:157:in `run'&#10;/Users/rajatchatterjee/.rvm/gems/ruby-2.5.1/gems/commander-4.6.0/lib/commander/runner.rb:444:in `run_active_command'&#10;/Users/rajatchatterjee/.rvm/gems/ruby-2.5.1/gems/fastlane-2.197.0/fastlane_core/lib/fastlane_core/ui/fastlane_runner.rb:117:in `run!'&#10;/Users/rajatchatterjee/.rvm/gems/ruby-2.5.1/gems/commander-4.6.0/lib/commander/delegates.rb:18:in `run!'&#10;/Users/rajatchatterjee/.rvm/gems/ruby-2.5.1/gems/fastlane-2.197.0/fastlane/lib/fastlane/commands_generator.rb:353:in `run'&#10;/Users/rajatchatterjee/.rvm/gems/ruby-2.5.1/gems/fastlane-2.197.0/fastlane/lib/fastlane/commands_generator.rb:42:in `start'&#10;/Users/rajatchatterjee/.rvm/gems/ruby-2.5.1/gems/fastlane-2.197.0/fastlane/lib/fastlane/cli_tools_distributor.rb:122:in `take_off'&#10;/Users/rajatchatterjee/.rvm/gems/ruby-2.5.1/gems/fastlane-2.197.0/bin/fastlane:23:in `&lt;top (required)&gt;'&#10;/Users/rajatchatterjee/.rvm/gems/ruby-2.5.1/bin/fastlane:23:in `load'&#10;/Users/rajatchatterjee/.rvm/gems/ruby-2.5.1/bin/fastlane:23:in `&lt;top (required)&gt;'&#10;/Users/rajatchatterjee/.rvm/gems/ruby-2.5.1/gems/bundler-2.1.4/lib/bundler/cli/exec.rb:63:in `load'&#10;/Users/rajatchatterjee/.rvm/gems/ruby-2.5.1/gems/bundler-2.1.4/lib/bundler/cli/exec.rb:63:in `kernel_load'&#10;/Users/rajatchatterjee/.rvm/gems/ruby-2.5.1/gems/bundler-2.1.4/lib/bundler/cli/exec.rb:28:in `run'&#10;/Users/rajatchatterjee/.rvm/gems/ruby-2.5.1/gems/bundler-2.1.4/lib/bundler/cli.rb:476:in `exec'&#10;/Users/rajatchatterjee/.rvm/gems/ruby-2.5.1/gems/bundler-2.1.4/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'&#10;/Users/rajatchatterjee/.rvm/gems/ruby-2.5.1/gems/bundler-2.1.4/lib/bundler/vendor/thor/lib/thor/invocation.rb:127:in `invoke_command'&#10;/Users/rajatchatterjee/.rvm/gems/ruby-2.5.1/gems/bundler-2.1.4/lib/bundler/vendor/thor/lib/thor.rb:399:in `dispatch'&#10;/Users/rajatchatterjee/.rvm/gems/ruby-2.5.1/gems/bundler-2.1.4/lib/bundler/cli.rb:30:in `dispatch'&#10;/Users/rajatchatterjee/.rvm/gems/ruby-2.5.1/gems/bundler-2.1.4/lib/bundler/vendor/thor/lib/thor/base.rb:476:in `start'&#10;/Users/rajatchatterjee/.rvm/gems/ruby-2.5.1/gems/bundler-2.1.4/lib/bundler/cli.rb:24:in `start'&#10;/Users/rajatchatterjee/.rvm/gems/ruby-2.5.1/gems/bundler-2.1.4/exe/bundle:46:in `block in &lt;top (required)&gt;'&#10;/Users/rajatchatterjee/.rvm/gems/ruby-2.5.1/gems/bundler-2.1.4/lib/bundler/friendly_errors.rb:123:in `with_friendly_errors'&#10;/Users/rajatchatterjee/.rvm/gems/ruby-2.5.1/gems/bundler-2.1.4/exe/bundle:34:in `&lt;top (required)&gt;'&#10;/Users/rajatchatterjee/.rvm/gems/ruby-2.5.1/bin/bundle:23:in `load'&#10;/Users/rajatchatterjee/.rvm/gems/ruby-2.5.1/bin/bundle:23:in `&lt;main&gt;'&#10;/Users/rajatchatterjee/.rvm/gems/ruby-2.5.1/bin/ruby_executable_hooks:24:in `eval'&#10;/Users/rajatchatterjee/.rvm/gems/ruby-2.5.1/bin/ruby_executable_hooks:24:in `&lt;main&gt;'&#10;&#10;Need to acknowledge to Apple's Apple ID and Privacy statement. Please manually log into https://appleid.apple.com (or https://appstoreconnect.apple.com) to acknowledge the statement. Your account might also be asked to upgrade to 2FA. Set SPACESHIP_SKIP_2FA_UPGRADE=1 for fastlane to automaticaly bypass 2FA upgrade if possible." />
+        
+      </testcase>
+    
+      
+      <testcase classname="fastlane.lanes" name="13: slack" time="0.382973">
+        
+      </testcase>
+    
+  </testsuite>
+</testsuites>

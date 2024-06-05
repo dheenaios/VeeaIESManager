@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-B.ttf">
+            <string>Ubuntu-Bold</string>
+        </array>
+        <array key="Ubuntu-R.ttf">
+            <string>Ubuntu</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConnectionProgressAlert" customModule="IESManager" customModuleProvider="target">
+            <connections>
+                <outlet property="alertView" destination="5ym-gc-GFC" id="4m2-uv-rHu"/>
+                <outlet property="connectUsingLabel" destination="mSi-v7-wuT" id="y0h-Uz-qKe"/>
+                <outlet property="nodeNameLabel" destination="nsi-2U-UUA" id="TIR-kT-Qgr"/>
+                <outlet property="nodeSerialLabel" destination="mf7-gT-FkY" id="xeL-MY-nH8"/>
+                <outlet property="progressView" destination="eim-ee-zuT" id="VdJ-ne-Swq"/>
+                <outlet property="rootView" destination="iN0-l3-epB" id="8Qb-qn-3W9"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ym-gc-GFC">
+                    <rect key="frame" x="50" y="258" width="314" height="220"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connecting to VeeaHub" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="udZ-Tt-QRw">
+                            <rect key="frame" x="8" y="18" width="298" height="22.666666666666671"/>
+                            <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MyNearByNode" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nsi-2U-UUA">
+                            <rect key="frame" x="8" y="54.666666666666686" width="298" height="16"/>
+                            <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EC10SomeThinSomeThing" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mf7-gT-FkY">
+                            <rect key="frame" x="8" y="74.666666666666686" width="298" height="16"/>
+                            <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" translatesAutoresizingMaskIntoConstraints="NO" id="eim-ee-zuT">
+                            <rect key="frame" x="32" y="108.66666666666669" width="250" height="2.6666666666666714"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </progressView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ePf-9P-GyH">
+                            <rect key="frame" x="0.0" y="176" width="314" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="5Zu-c7-9KX"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="15"/>
+                            <state key="normal" title="Cancel"/>
+                            <connections>
+                                <action selector="cancelTapped:" destination="-1" eventType="touchUpInside" id="fPQ-sK-q1z"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AT7-8R-lXH">
+                            <rect key="frame" x="0.0" y="175.66666666666669" width="314" height="0.33333333333334281"/>
+                            <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="MFv-Mw-JeG"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connect using XXXXX..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mSi-v7-wuT">
+                            <rect key="frame" x="0.0" y="142" width="314" height="13.666666666666657"/>
+                            <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="12"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="eim-ee-zuT" firstAttribute="leading" secondItem="5ym-gc-GFC" secondAttribute="leading" constant="32" id="2hi-uY-kur"/>
+                        <constraint firstAttribute="trailing" secondItem="mSi-v7-wuT" secondAttribute="trailing" id="76j-eq-d9P"/>
+                        <constraint firstItem="udZ-Tt-QRw" firstAttribute="leading" secondItem="5ym-gc-GFC" secondAttribute="leading" constant="8" id="CxK-F8-O4V"/>
+                        <constraint firstAttribute="trailing" secondItem="eim-ee-zuT" secondAttribute="trailing" constant="32" id="D1b-6w-zRi"/>
+                        <constraint firstItem="mf7-gT-FkY" firstAttribute="leading" secondItem="5ym-gc-GFC" secondAttribute="leading" constant="8" id="K5V-m6-trV"/>
+                        <constraint firstItem="eim-ee-zuT" firstAttribute="top" secondItem="mf7-gT-FkY" secondAttribute="bottom" constant="18" id="Rig-EJ-BSc"/>
+                        <constraint firstItem="nsi-2U-UUA" firstAttribute="leading" secondItem="5ym-gc-GFC" secondAttribute="leading" constant="8" id="S03-5F-AAI"/>
+                        <constraint firstAttribute="trailing" secondItem="nsi-2U-UUA" secondAttribute="trailing" constant="8" id="XA9-Bg-B8M"/>
+                        <constraint firstItem="ePf-9P-GyH" firstAttribute="top" secondItem="AT7-8R-lXH" secondAttribute="bottom" id="ak2-MZ-ftf"/>
+                        <constraint firstAttribute="bottom" secondItem="ePf-9P-GyH" secondAttribute="bottom" id="dhd-PH-pa9"/>
+                        <constraint firstAttribute="trailing" secondItem="AT7-8R-lXH" secondAttribute="trailing" id="dlJ-2I-fDK"/>
+                        <constraint firstItem="mSi-v7-wuT" firstAttribute="leading" secondItem="5ym-gc-GFC" secondAttribute="leading" id="eo8-Cb-own"/>
+                        <constraint firstAttribute="trailing" secondItem="mf7-gT-FkY" secondAttribute="trailing" constant="8" id="geS-VW-AGj"/>
+                        <constraint firstItem="udZ-Tt-QRw" firstAttribute="top" secondItem="5ym-gc-GFC" secondAttribute="top" constant="18" id="ihg-Ig-FmF"/>
+                        <constraint firstAttribute="height" constant="220" id="koo-Eo-bwH"/>
+                        <constraint firstItem="ePf-9P-GyH" firstAttribute="leading" secondItem="5ym-gc-GFC" secondAttribute="leading" id="lfC-XA-fSO"/>
+                        <constraint firstItem="nsi-2U-UUA" firstAttribute="top" secondItem="udZ-Tt-QRw" secondAttribute="bottom" constant="14" id="pdR-Pb-nWJ"/>
+                        <constraint firstItem="AT7-8R-lXH" firstAttribute="top" secondItem="mSi-v7-wuT" secondAttribute="bottom" constant="20" id="qYT-Ud-Hpu"/>
+                        <constraint firstItem="AT7-8R-lXH" firstAttribute="leading" secondItem="5ym-gc-GFC" secondAttribute="leading" id="qfd-j9-eaE"/>
+                        <constraint firstAttribute="trailing" secondItem="ePf-9P-GyH" secondAttribute="trailing" id="uwK-Rm-vb6"/>
+                        <constraint firstAttribute="trailing" secondItem="udZ-Tt-QRw" secondAttribute="trailing" constant="8" id="v9S-Ys-Ruv"/>
+                        <constraint firstItem="mf7-gT-FkY" firstAttribute="top" secondItem="nsi-2U-UUA" secondAttribute="bottom" constant="4" id="wh8-n9-THd"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.20440924657534246" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="5ym-gc-GFC" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="1R7-fR-TPt"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="5ym-gc-GFC" secondAttribute="trailing" constant="50" id="ND5-gz-LKc"/>
+                <constraint firstItem="5ym-gc-GFC" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="50" id="c4f-UV-SWD"/>
+            </constraints>
+            <point key="canvasLocation" x="11.594202898550726" y="118.20652173913044"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="tertiarySystemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

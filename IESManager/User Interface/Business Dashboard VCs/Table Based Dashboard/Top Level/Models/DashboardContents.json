@@ -1,0 +1,311 @@
+[
+    {
+        "section" : "Wireless",
+        "isHidden" : false,
+        "contents" : [
+            {
+                "androidIconNames" : [
+                    "wifi_grey",
+                    "wifi_red",
+                    "wifi_amber",
+                    "wifi_green"
+                ],
+                "iosIconName" : "dash_icon_wifi",
+                "itemID" : "twoGhzAp",
+                "iosSegueID" : "radioAccessPointConfig",
+                "title" : "Wi-Fi (2.4GHz)",
+                "subTitle" : "",
+                "isEnabled" : true,
+                "isHidden" : false,
+                "isOptional" : false
+            },
+            {
+                "androidIconNames" : [
+                    "wifi_grey",
+                    "wifi_red",
+                    "wifi_amber",
+                    "wifi_green"
+                ],
+                "iosIconName" : "dash_icon_wifi",
+                "itemID" : "fiveGhzAp",
+                "iosSegueID" : "radioAccessPointConfig5ghz",
+                "title" : "Wi-Fi (5GHz)",
+                "subTitle" : "",
+                "isEnabled" : true,
+                "isHidden" : false,
+                "isOptional" : false
+            }
+        ]
+    },
+    {
+        "section" : "Networking",
+        "isHidden" : false,
+        "contents" : [
+            {
+                "androidIconNames" : [
+                    "lan_grey",
+                    "lan_red",
+                    "lan_amber",
+                    "lan_green"
+                ],
+                "iosIconName" : "dash_icon_lan_mesh",
+                "itemID" : "lanConfig",
+                "iosSegueID" : "lanConfig",
+                "title" : "LAN",
+                "subTitle" : "",
+                "isEnabled" : true,
+                "isHidden" : false,
+                "isOptional" : false
+            },
+            {
+                "androidIconNames" : [
+                    "backhaul_grey",
+                    "backhaul_red",
+                    "backhaul_amber",
+                    "backhaul_green"
+                ],
+                "iosIconName" : "dash_icon_wan_gateway",
+                "itemID" : "gatewayItem",
+                "iosSegueID" : "GatewayConfig",
+                "title" : "WAN Gateway",
+                "subTitle" : "",
+                "isEnabled" : true,
+                "isHidden" : false,
+                "isOptional" : false
+            },
+            {
+                "androidIconNames" : [
+                    "mesh_grey",
+                    "mesh_red",
+                    "mesh_amber",
+                    "mesh_green"
+                ],
+                "iosIconName" : "dash_icon_vmesh",
+                "itemID" : "meshGatewayItem",
+                "iosSegueID" : "VmeshConfig",
+                "title" : "vMesh",
+                "subTitle" : "",
+                "isEnabled" : true,
+                "isHidden" : false,
+                "isOptional" : false
+            },
+            {
+                "androidIconNames" : [
+                    "port_grey",
+                    "port_red",
+                    "port_amber",
+                    "port_green"
+                ],
+                "iosIconName" : "dash_icon_physical_ports",
+                "itemID" : "physicalPorts",
+                "iosSegueID" : "physicalPorts",
+                "title" : "Physical Ports",
+                "subTitle" : "",
+                "isEnabled" : true,
+                "isHidden" : false,
+                "isOptional" : false
+            },
+            {
+                "androidIconNames" : [
+                    "ip_icon_grey",
+                    "ip_icon_black"
+                ],
+                "iosIconName" : "dash_icon_ip_address",
+                "itemID" : "iPItem",
+                "iosSegueID" : "IPConfig",
+                "title" : "IP Address",
+                "subTitle" : "Unknown",
+                "isEnabled" : true,
+                "isHidden" : false,
+                "isOptional" : false
+            },
+            {
+                "androidIconNames" : [
+                    "router_grey",
+                    "router_black"
+                ],
+                "iosIconName" : "dash_icon_router",
+                "itemID" : "routerItem",
+                "iosSegueID" : "routerConfig",
+                "title" : "Access Control",
+                "subTitle" : "",
+                "isEnabled" : true,
+                "isHidden" : false,
+                "isOptional" : false
+            }]
+    },
+    {
+        "section" : "Cellular",
+        "isHidden" : false,
+        "contents" : [
+            {
+                "androidIconNames" : [
+                    "cellular_stats_icon_grey",
+                    "cellular_stats_icon_black"
+                ],
+                "iosIconName" : "dash_icon_cell",
+                "itemID" : "cellularStatsItem",
+                "iosSegueID" : "CellularStats",
+                "title" : "Cellular information",
+                "subTitle" : "",
+                "isEnabled" : true,
+                "isHidden" : false,
+                "isOptional" : false
+            },
+            {
+                "androidIconNames" : "ic_data_usage",
+                "iosIconName" : "data_usage",
+                "itemID" : "sdWan",
+                "iosSegueID" : "sdWan",
+                "title" : "Data usage",
+                "subTitle" : "",
+                "isEnabled" : true,
+                "isHidden" : false,
+                "isOptional" : true
+            }
+        ]
+    },
+    {
+        "section" : "Security",
+        "isHidden" : false,
+        "contents" : [
+            {
+                "androidIconNames" : [
+                    "firewall_grey",
+                    "firewall_black"
+                ],
+                "iosIconName" : "dash_icon_firewall",
+                "itemID" : "firewallItem",
+                "iosSegueID" : "firewallConfig",
+                "title" : "Firewall",
+                "subTitle" : "",
+                "isEnabled" : true,
+                "isHidden" : false,
+                "isOptional" : false
+            }
+        ]
+    },
+    {
+        "section" : "Other",
+        "isHidden" : false,
+        "contents" : [
+            {
+                "androidIconNames" : [
+                    "status_media_grey",
+                    "status_media_red",
+                    "status_media_amber",
+                    "status_media_green"
+                ],
+                "iosIconName" : "dash_icon_services",
+                "itemID" : "optional_services",
+                "iosSegueID" : "",
+                "title" : "Subscriptions",
+                "subTitle" : "",
+                "isEnabled" : true,
+                "isHidden" : false,
+                "isOptional" : true
+            },
+            {
+                "androidIconNames" : [
+                    "status_media_grey",
+                    "status_media_red",
+                    "status_media_amber",
+                    "status_media_green"
+                ],
+                "iosIconName" : "status_media_grey",
+                "itemID" : "retail_analytics",
+                "iosSegueID" : "",
+                "title" : "Retail",
+                "subTitle" : "",
+                "isEnabled" : true,
+                "isHidden" : false,
+                "isOptional" : true
+            },
+            {
+                "androidIconNames" : [
+                    "status_retail_grey",
+                    "status_retail_red",
+                    "status_retail_amber",
+                    "status_retail_green"
+                ],
+                "iosIconName" : "status_retail_grey",
+                "itemID" : "media_analytics",
+                "iosSegueID" : "",
+                "title" : "Media",
+                "subTitle" : "",
+                "isEnabled" : true,
+                "isHidden" : false,
+                "isOptional" : true
+            },
+            {
+                "androidIconNames" : [
+                    "status_beacon_grey",
+                    "status_beacon_red",
+                    "status_beacon_amber",
+                    "status_beacon_green"
+                ],
+                "iosIconName" : "dash_icon_bt_beacon",
+                "itemID" : "beaconItem",
+                "iosSegueID" : "BeaconConfig",
+                "title" : "BT Beacon",
+                "subTitle" : "",
+                "isEnabled" : true,
+                "isHidden" : false,
+                "isOptional" : false
+            },
+            {
+                "androidIconNames" : [
+                    "status_node_grey",
+                    "status_node_red",
+                    "status_node_amber",
+                    "status_node_green"
+                ],
+                "iosIconName" : "dash_icon_config_info",
+                "itemID" : "nodeItem",
+                "iosSegueID" : "NodeConfig",
+                "title" : "About VeeaHub",
+                "subTitle" : "",
+                "isHidden" : false,
+                "isEnabled" : true,
+                "isOptional" : false
+            }
+        ]
+    },
+    {
+        "section" : "",
+        "isHidden" : false,
+        "contents" : [
+            {
+                "androidIconNames" : [
+                    "vlan_grey",
+                    "vlan_red",
+                    "vlan_amber",
+                    "vlan_green"
+                ],
+                "iosIconName" : "vlan_grey",
+                "itemID" : "vlan",
+                "iosSegueID" : "vLanConfig",
+                "title" : "vLAN",
+                "subTitle" : "",
+                "isEnabled" : true,
+                "isHidden" : true,
+                "isOptional" : false
+            },
+            {
+                "androidIconNames" : [
+                    "power_grey",
+                    "power_black"
+                ],
+                "iosIconName" : "dash_icon_power",
+                "itemID" : "powerItem",
+                "iosSegueID" : "",
+                "title" : "Shutdown, restart or recover",
+                "subTitle" : "",
+                "isEnabled" : true,
+                "isHidden" : false,
+                "isOptional" : false
+            }
+        ]
+    }
+]
+ 

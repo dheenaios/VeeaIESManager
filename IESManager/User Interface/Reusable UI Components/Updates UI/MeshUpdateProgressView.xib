@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MeshUpdateProgressView" customModule="IESManager" customModuleProvider="target">
+            <connections>
+                <outlet property="backingView" destination="W5Y-Pa-naF" id="pEB-Ax-cZJ"/>
+                <outlet property="percentageProgressBar" destination="bP1-Ye-qHb" id="En0-nv-fB5"/>
+                <outlet property="stepsProgressBar" destination="G5M-qv-sbs" id="NKm-Ss-JY8"/>
+                <outlet property="xibView" destination="iN0-l3-epB" id="jad-VN-v1M"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="247"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W5Y-Pa-naF">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="247"/>
+                    <color key="backgroundColor" systemColor="systemGray5Color"/>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="5A5-SP-7O6">
+                    <rect key="frame" x="16" y="8" width="343" height="80"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G5M-qv-sbs" customClass="UpdateProgressView" customModule="IESManager" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="343" height="36"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="36" id="e3e-vq-Owg"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Jn-JM-ToG">
+                            <rect key="frame" x="0.0" y="36" width="343" height="8"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="8" id="CEA-gN-oRm"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bP1-Ye-qHb" customClass="UpdateProgressView" customModule="IESManager" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="44" width="343" height="36"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="36" id="rwU-Kb-N2c"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="5A5-SP-7O6" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="BC7-wm-w0r"/>
+                <constraint firstItem="W5Y-Pa-naF" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="FU6-60-WgI"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="5A5-SP-7O6" secondAttribute="trailing" constant="16" id="Xkf-Ub-oAK"/>
+                <constraint firstItem="W5Y-Pa-naF" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="bKn-hN-aux"/>
+                <constraint firstItem="5A5-SP-7O6" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="8" id="hkn-Zv-Oe6"/>
+                <constraint firstItem="W5Y-Pa-naF" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="swk-L1-EBV"/>
+                <constraint firstItem="W5Y-Pa-naF" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="vwP-lv-NKy"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="252" y="67.916041979010501"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

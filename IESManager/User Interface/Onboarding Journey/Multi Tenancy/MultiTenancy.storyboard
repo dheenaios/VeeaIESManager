@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HVg-xP-oTy">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-R.ttf">
+            <string>Ubuntu</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Select Realm View Controller-->
+        <scene sceneID="6ve-x2-Wx8">
+            <objects>
+                <viewController storyboardIdentifier="SelectRealmViewController" id="HVg-xP-oTy" customClass="SelectRealmViewController" customModule="IESManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="crD-Z4-RdJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dce-Um-PDM">
+                                <rect key="frame" x="20" y="64" width="374" height="94.5"/>
+                                <string key="text">Select the organization to log into.
+If you do not know your organization, please contact your system administrator.
+
+If you are not part of an organization, use Veea as the default.</string>
+                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="14"/>
+                                <color key="textColor" systemColor="systemGrayColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dgs-bt-Yw1">
+                                <rect key="frame" x="0.0" y="174.5" width="414" height="721.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="5Iw-ff-d98">
+                                    <rect key="frame" x="0.0" y="153" width="414" height="89"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LnJ-ll-Xcv">
+                                            <rect key="frame" x="16" y="11.5" width="382" height="66"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add a new organization..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TDc-i3-fAI">
+                                                    <rect key="frame" x="12" y="23.5" width="194" height="19.5"/>
+                                                    <fontDescription key="fontDescription" weight="semibold" name="Ubuntu" family="Ubuntu" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hXL-TK-VWt">
+                                                    <rect key="frame" x="344" y="14" width="30" height="38"/>
+                                                    <color key="backgroundColor" name="Select Organisation Button"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="30" id="OLQ-8h-svr"/>
+                                                        <constraint firstAttribute="height" constant="38" id="e9g-pg-ZP0"/>
+                                                    </constraints>
+                                                </view>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8EI-au-p4P">
+                                                    <rect key="frame" x="0.0" y="0.0" width="384" height="66"/>
+                                                    <accessibility key="accessibilityConfiguration" identifier="add_new_org_button" label="add_new_org_button">
+                                                        <bool key="isElement" value="NO"/>
+                                                    </accessibility>
+                                                    <connections>
+                                                        <segue destination="P5f-eZ-CjO" kind="show" id="Gmw-WW-4fs"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" name="Select Organisation Button"/>
+                                            <constraints>
+                                                <constraint firstItem="hXL-TK-VWt" firstAttribute="centerY" secondItem="LnJ-ll-Xcv" secondAttribute="centerY" id="4lV-hb-dwy"/>
+                                                <constraint firstAttribute="trailing" secondItem="hXL-TK-VWt" secondAttribute="trailing" constant="8" id="5k8-Fo-jHY"/>
+                                                <constraint firstAttribute="bottom" secondItem="8EI-au-p4P" secondAttribute="bottom" id="InL-xF-Bk0"/>
+                                                <constraint firstItem="TDc-i3-fAI" firstAttribute="leading" secondItem="LnJ-ll-Xcv" secondAttribute="leading" constant="12" id="PrV-Qf-Hbq"/>
+                                                <constraint firstItem="TDc-i3-fAI" firstAttribute="centerY" secondItem="LnJ-ll-Xcv" secondAttribute="centerY" id="QLF-4i-i5r"/>
+                                                <constraint firstItem="8EI-au-p4P" firstAttribute="leading" secondItem="LnJ-ll-Xcv" secondAttribute="leading" id="QcI-zd-xgG"/>
+                                                <constraint firstAttribute="trailing" secondItem="8EI-au-p4P" secondAttribute="trailing" constant="-2" id="ZbQ-A1-cUe"/>
+                                                <constraint firstItem="8EI-au-p4P" firstAttribute="top" secondItem="LnJ-ll-Xcv" secondAttribute="top" id="nfA-lI-1be"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="LnJ-ll-Xcv" firstAttribute="leading" secondItem="5Iw-ff-d98" secondAttribute="leading" constant="16" id="7wX-SE-Mtu"/>
+                                        <constraint firstAttribute="trailing" secondItem="LnJ-ll-Xcv" secondAttribute="trailing" constant="16" id="nal-sw-lWr"/>
+                                        <constraint firstAttribute="bottom" secondItem="LnJ-ll-Xcv" secondAttribute="bottom" constant="11.5" id="viF-m7-YqY"/>
+                                        <constraint firstItem="LnJ-ll-Xcv" firstAttribute="top" secondItem="5Iw-ff-d98" secondAttribute="top" constant="11.5" id="ysH-vl-mu4"/>
+                                    </constraints>
+                                </view>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="75" id="7Zs-EE-t6x" customClass="RealmCell" customModule="IESManager" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="414" height="75"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7Zs-EE-t6x" id="EuZ-PB-nee">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="75"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mfk-9P-i2o">
+                                                    <rect key="frame" x="20" y="5" width="374" height="65"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="veeaLogo" translatesAutoresizingMaskIntoConstraints="NO" id="wLb-eB-dRI">
+                                                            <rect key="frame" x="16" y="16" width="33" height="33"/>
+                                                            <color key="backgroundColor" red="0.59514105319999999" green="0.1724908054" blue="0.16290053730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" secondItem="wLb-eB-dRI" secondAttribute="height" multiplier="1:1" id="VYB-BK-uhI"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="veea (default)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qD9-9F-0N4">
+                                                            <rect key="frame" x="65" y="23" width="107.5" height="19.5"/>
+                                                            <fontDescription key="fontDescription" weight="semibold" name="Ubuntu" family="Ubuntu" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z2O-Qt-LdV">
+                                                            <rect key="frame" x="336" y="13.5" width="30" height="38"/>
+                                                            <color key="backgroundColor" name="Select Organisation Button"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="38" id="j3e-ZA-pml"/>
+                                                                <constraint firstAttribute="width" constant="30" id="kO6-CS-TMR"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                    <color key="backgroundColor" name="Select Organisation Button"/>
+                                                    <constraints>
+                                                        <constraint firstItem="qD9-9F-0N4" firstAttribute="centerY" secondItem="wLb-eB-dRI" secondAttribute="centerY" id="5WT-af-cdL"/>
+                                                        <constraint firstAttribute="height" constant="65" id="9Wk-a3-jLd"/>
+                                                        <constraint firstItem="qD9-9F-0N4" firstAttribute="leading" secondItem="wLb-eB-dRI" secondAttribute="trailing" constant="16" id="Bft-FK-vYf"/>
+                                                        <constraint firstItem="wLb-eB-dRI" firstAttribute="top" secondItem="mfk-9P-i2o" secondAttribute="top" constant="16" id="FbB-It-6ZF"/>
+                                                        <constraint firstItem="z2O-Qt-LdV" firstAttribute="centerY" secondItem="mfk-9P-i2o" secondAttribute="centerY" id="IG1-Xq-45n"/>
+                                                        <constraint firstItem="wLb-eB-dRI" firstAttribute="leading" secondItem="mfk-9P-i2o" secondAttribute="leading" constant="16" id="Ln2-cU-mGp"/>
+                                                        <constraint firstAttribute="bottom" secondItem="wLb-eB-dRI" secondAttribute="bottom" constant="16" id="cju-mx-SmX"/>
+                                                        <constraint firstAttribute="trailing" secondItem="z2O-Qt-LdV" secondAttribute="trailing" constant="8" id="kbJ-fL-PqG"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="mfk-9P-i2o" firstAttribute="leading" secondItem="EuZ-PB-nee" secondAttribute="leadingMargin" id="6hS-FF-rfh"/>
+                                                <constraint firstItem="mfk-9P-i2o" firstAttribute="trailing" secondItem="EuZ-PB-nee" secondAttribute="trailingMargin" id="SZp-Pl-Ksx"/>
+                                                <constraint firstItem="mfk-9P-i2o" firstAttribute="centerY" secondItem="EuZ-PB-nee" secondAttribute="centerY" id="fpp-oP-F6b"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="backingView" destination="mfk-9P-i2o" id="ObE-v3-hk6"/>
+                                            <outlet property="disclosureContainerView" destination="z2O-Qt-LdV" id="yOR-KK-xQ1"/>
+                                            <outlet property="realmTitle" destination="qD9-9F-0N4" id="kJ3-pk-N4B"/>
+                                            <outlet property="veeaImageView" destination="wLb-eB-dRI" id="1ef-ZL-KgD"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="HVg-xP-oTy" id="Kfd-GI-Le7"/>
+                                    <outlet property="delegate" destination="HVg-xP-oTy" id="fg8-tT-bg6"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1eR-md-eKE"/>
+                        <color key="backgroundColor" name="Enroll New Device Background"/>
+                        <constraints>
+                            <constraint firstItem="dgs-bt-Yw1" firstAttribute="leading" secondItem="1eR-md-eKE" secondAttribute="leading" id="3gB-KN-yvp"/>
+                            <constraint firstItem="Dce-Um-PDM" firstAttribute="leading" secondItem="1eR-md-eKE" secondAttribute="leading" constant="20" id="6uK-QY-c5F"/>
+                            <constraint firstItem="dgs-bt-Yw1" firstAttribute="trailing" secondItem="1eR-md-eKE" secondAttribute="trailing" id="JeL-sJ-hLa"/>
+                            <constraint firstItem="Dce-Um-PDM" firstAttribute="top" secondItem="1eR-md-eKE" secondAttribute="top" constant="16" id="Nib-HW-gLT"/>
+                            <constraint firstItem="1eR-md-eKE" firstAttribute="trailing" secondItem="Dce-Um-PDM" secondAttribute="trailing" constant="20" id="RId-bA-Suu"/>
+                            <constraint firstItem="dgs-bt-Yw1" firstAttribute="top" secondItem="Dce-Um-PDM" secondAttribute="bottom" constant="16" id="Tax-tw-Otj"/>
+                            <constraint firstAttribute="bottom" secondItem="dgs-bt-Yw1" secondAttribute="bottom" id="o9E-Ip-6bS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addNewRealmDisclosureView" destination="hXL-TK-VWt" id="lrx-gf-n33"/>
+                        <outlet property="addNewRealmView" destination="LnJ-ll-Xcv" id="wOl-tM-wlh"/>
+                        <outlet property="tableView" destination="dgs-bt-Yw1" id="iQv-BX-wyb"/>
+                        <outlet property="titleLabel" destination="Dce-Um-PDM" id="ggz-8Y-A5h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aWs-rN-Vhr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="266.66666666666669" y="212.94642857142856"/>
+        </scene>
+        <!--New Realm View Controller-->
+        <scene sceneID="BkF-fe-gYS">
+            <objects>
+                <viewController id="P5f-eZ-CjO" customClass="NewRealmViewController" customModule="IESManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="36Z-qU-trK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter the name of your organization as it was provided to you to add to your organization list." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5bE-4k-1GM">
+                                <rect key="frame" x="20" y="72" width="374" height="31.5"/>
+                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="14"/>
+                                <color key="textColor" systemColor="systemGrayColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vlf-MC-tbs">
+                                <rect key="frame" x="20" y="119.5" width="374" height="43"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Organization name (required)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xGe-Em-87b">
+                                        <rect key="frame" x="8" y="0.0" width="366" height="43"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="xGe-Em-87b" firstAttribute="top" secondItem="vlf-MC-tbs" secondAttribute="top" id="7L2-kd-JmJ"/>
+                                    <constraint firstItem="xGe-Em-87b" firstAttribute="leading" secondItem="vlf-MC-tbs" secondAttribute="leading" constant="8" id="7L7-ba-0HA"/>
+                                    <constraint firstAttribute="bottom" secondItem="xGe-Em-87b" secondAttribute="bottom" id="a2l-0s-Wfq"/>
+                                    <constraint firstAttribute="height" constant="43" id="bAd-bX-vqw"/>
+                                    <constraint firstAttribute="trailing" secondItem="xGe-Em-87b" secondAttribute="trailing" id="jRE-xV-uEj"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zSe-vj-ht2">
+                                <rect key="frame" x="20" y="202.5" width="374" height="43"/>
+                                <color key="backgroundColor" name="Veea Background"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="sKd-Kf-nYb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="17"/>
+                                <state key="normal" title="Add Organization">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="addActionTapped:" destination="P5f-eZ-CjO" eventType="touchUpInside" id="S3D-X7-lzw"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you do not know your Organization, please contact your system administrator." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fme-P1-R0O">
+                                <rect key="frame" x="20" y="263.5" width="374" height="31.5"/>
+                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="14"/>
+                                <color key="textColor" systemColor="systemGrayColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invalid Organisation Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KAk-A3-Z4y">
+                                <rect key="frame" x="20" y="166.5" width="374" height="16"/>
+                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="14"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9Fl-Y6-nEi"/>
+                        <color key="backgroundColor" name="Enroll New Device Background"/>
+                        <constraints>
+                            <constraint firstItem="zSe-vj-ht2" firstAttribute="leading" secondItem="9Fl-Y6-nEi" secondAttribute="leading" constant="20" id="2o5-Wx-634"/>
+                            <constraint firstItem="KAk-A3-Z4y" firstAttribute="leading" secondItem="9Fl-Y6-nEi" secondAttribute="leading" constant="20" id="84n-Ka-GiI"/>
+                            <constraint firstItem="KAk-A3-Z4y" firstAttribute="top" secondItem="vlf-MC-tbs" secondAttribute="bottom" constant="4" id="A7L-Wt-qYd"/>
+                            <constraint firstItem="5bE-4k-1GM" firstAttribute="leading" secondItem="9Fl-Y6-nEi" secondAttribute="leading" constant="20" id="Cuu-Kc-N63"/>
+                            <constraint firstItem="5bE-4k-1GM" firstAttribute="top" secondItem="9Fl-Y6-nEi" secondAttribute="top" constant="16" id="FUy-g2-wNk"/>
+                            <constraint firstItem="zSe-vj-ht2" firstAttribute="top" secondItem="vlf-MC-tbs" secondAttribute="bottom" constant="40" id="IUd-uV-XAb"/>
+                            <constraint firstItem="9Fl-Y6-nEi" firstAttribute="trailing" secondItem="vlf-MC-tbs" secondAttribute="trailing" constant="20" id="PKv-H4-aJp"/>
+                            <constraint firstItem="vlf-MC-tbs" firstAttribute="top" secondItem="5bE-4k-1GM" secondAttribute="bottom" constant="16" id="SIA-T6-OKC"/>
+                            <constraint firstItem="9Fl-Y6-nEi" firstAttribute="trailing" secondItem="5bE-4k-1GM" secondAttribute="trailing" constant="20" id="Ul9-kk-cAY"/>
+                            <constraint firstItem="9Fl-Y6-nEi" firstAttribute="trailing" secondItem="KAk-A3-Z4y" secondAttribute="trailing" constant="20" id="c77-cD-4LT"/>
+                            <constraint firstItem="Fme-P1-R0O" firstAttribute="top" secondItem="zSe-vj-ht2" secondAttribute="bottom" constant="18" id="c7I-kn-3eL"/>
+                            <constraint firstItem="Fme-P1-R0O" firstAttribute="leading" secondItem="9Fl-Y6-nEi" secondAttribute="leading" constant="20" id="kbG-5d-FDb"/>
+                            <constraint firstItem="9Fl-Y6-nEi" firstAttribute="trailing" secondItem="Fme-P1-R0O" secondAttribute="trailing" constant="20" id="o6A-d7-7k8"/>
+                            <constraint firstItem="vlf-MC-tbs" firstAttribute="leading" secondItem="9Fl-Y6-nEi" secondAttribute="leading" constant="20" id="yJa-Vv-3AY"/>
+                            <constraint firstItem="9Fl-Y6-nEi" firstAttribute="trailing" secondItem="zSe-vj-ht2" secondAttribute="trailing" constant="20" id="zl6-7T-XZs"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="UZe-i6-pme"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="addOrgButton" destination="zSe-vj-ht2" id="aA2-za-NHK"/>
+                        <outlet property="textField" destination="xGe-Em-87b" id="BnY-hf-pvM"/>
+                        <outlet property="textFieldView" destination="vlf-MC-tbs" id="m6V-ND-ScQ"/>
+                        <outlet property="warningLabel" destination="KAk-A3-Z4y" id="suL-jz-DUq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ohk-Ht-rbQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1098.5507246376812" y="212.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="veeaLogo" width="400" height="400"/>
+        <namedColor name="Enroll New Device Background">
+            <color red="0.92500001192092896" green="0.93900001049041748" blue="0.94499999284744263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Select Organisation Button">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Veea Background">
+            <color red="0.25490196078431371" green="0.50196078431372548" blue="0.8666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
