@@ -150,7 +150,6 @@ class MeshSelectionViewController: UIViewController, AnalyticsScreenViewEventPro
             vm.hasViewVanishedSinceLastUpdate = false
             return
         }
-        
         loadData()
     }
     
